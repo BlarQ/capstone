@@ -1,0 +1,6 @@
+.nav{
+    background-image: url(/homeimg.jpg);
+    min-height: 95vh;
+    background-size: cover;
+    margin-inline: 30px;
+}
