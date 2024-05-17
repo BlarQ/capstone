@@ -3,6 +3,7 @@ import "./globals.css";
 import { TopNav } from "./components/TopNav";
 import { BottomNav } from "./components/BottomNav";
 import Footer from "./components/Footer";
+import HomeProduct from "./components/HomeProduct";
 
 const urbanist = Urbanist({ subsets: ["latin"] });
 
@@ -21,7 +22,7 @@ export default function RootLayout({ children }) {
         </div>
         <div className="min-h-screen">
           {children}
-
+          <HomeProduct />
         </div>
         
         <Footer />

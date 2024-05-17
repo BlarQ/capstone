@@ -14,7 +14,7 @@ export default function Footer() {
               </form>
             </div>
 
-            <section className='grid grid-cols-4 gap-32'>
+            <section className='grid sm:grid-cols-4 grid-rows-1 sm:gap-32 gap-10'>
               <div className='text-5xl'>
                 <p className='mb-10'>Discover Your Style... </p>
                 <p className='text-4xl'>@TrendLuxe</p>
