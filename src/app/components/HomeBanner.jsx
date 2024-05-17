@@ -9,7 +9,7 @@ export default function HomeBanner() {
         <div className='pl-16 pr-[40rem]'>
           <p className='text-7xl text-white font-extrabold'>Unlock the essence of timeless style<span className='text-[#2e4053]'>.</span></p>
 
-          <button className='flex bg-[#2e4053] mt-10 py-3 px-5 rounded-full text-white font-bold'>Shop Now <MdArrowOutward className='text-xl ml-1'/> </button>
+          <button className='flex bg-[#2e4053] mt-10 py-3 px-5 rounded-full text-white font-bold hover:scale-95 duration-300'>Shop Now <MdArrowOutward className='text-xl ml-1'/> </button>
         </div>
       </div>
     </div>
