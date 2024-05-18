@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import { data } from "./data";
 
-const productData = data.filter(datum => datum.type =='Shoe').slice(3, 6)
+const productData = data.filter(datum => datum.type =='Wallet').slice(0, 6)
 
 export default function HomeProduct() {
     const productLog = productData.map(product =>(
@@ -31,7 +31,7 @@ export default function HomeProduct() {
     ))
   return (
     <section>
-        <div className='grid sm:grid-cols-3 gap-4 mx-8 mt-10'>
+        <div className='grid sm:grid-cols-3 grid-cols-1 sm:grid-rows-3 grid-rows-3 gap-4 mx-8 mt-10'>
             {productLog}
         </div>
     </section>
