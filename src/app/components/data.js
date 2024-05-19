@@ -98,7 +98,7 @@ export const data = [
   {
     "id": 9,
     "name": "Timberland Earthkeepers",
-    "type": "Boot",
+    "type": "Shoe",
     "description": [
       "Stay eco-friendly and stylish with the Timberland Earthkeepers. Made with recycled materials and premium leather, these boots are both sustainable and durable.",
       "The anti-fatigue footbed provides comfort, while the lug outsole offers excellent traction.",
@@ -110,7 +110,7 @@ export const data = [
   {
     "id": 10,
     "name": "Dr. Martens 1460",
-    "type": "Boot",
+    "type": "Shoe",
     "description": [
       "Step into iconic style with the Dr. Martens 1460. Known for its durable leather upper and signature yellow stitching, this boot is a symbol of rebellious fashion.",
       "The AirWair sole provides cushioning and slip resistance, while the Goodyear welt construction ensures durability.",

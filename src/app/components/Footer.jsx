@@ -24,11 +24,11 @@ export default function Footer() {
                 <section>
                   <div className='flex flex-col gap-4'>
                     <p className='text-lg font-bold'>Pages</p>
-                    <Link className='hover:translate-x-1 duration-300  hover:text-[#e7e7e7]' href='/'>Home</Link>
-                    <Link className='hover:translate-x-1 duration-300  hover:text-[#e7e7e7]' href='/'>About</Link>
-                    <Link className='hover:translate-x-1 duration-300  hover:text-[#e7e7e7]' href='/'>Pages</Link>
-                    <Link className='hover:translate-x-1 duration-300  hover:text-[#e7e7e7]' href='/'>Products</Link>
-                    <Link className='hover:translate-x-1 duration-300  hover:text-[#e7e7e7]' href='/'>Contact</Link>
+                    <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Home</Link>
+                    <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>About</Link>
+                    <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Pages</Link>
+                    <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Products</Link>
+                    <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Contact</Link>
                   </div>
                 </section>
               </section>
@@ -37,12 +37,12 @@ export default function Footer() {
                 <section>
                   <div className='flex flex-col gap-4'>
                     <p className='text-lg font-bold'>Category</p>
-                    <Link className='hover:translate-x-1 duration-300  hover:text-[#e7e7e7]' href='/'>Shoes</Link>
-                    <Link className='hover:translate-x-1 duration-300  hover:text-[#e7e7e7]' href='/'>Shirts</Link>
-                    <Link className='hover:translate-x-1 duration-300  hover:text-[#e7e7e7]' href='/'>WristWatch</Link>
-                    <Link className='hover:translate-x-1 duration-300  hover:text-[#e7e7e7]' href='/'>Bag & Purse for Women</Link>
-                    <Link className='hover:translate-x-1 duration-300  hover:text-[#e7e7e7]' href='/'>Breifcase</Link>
-                    <Link className='hover:translate-x-1 duration-300  hover:text-[#e7e7e7]' href='/'>Wallets</Link>
+                    <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Shoes</Link>
+                    <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Shirts</Link>
+                    <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>WristWatch</Link>
+                    <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Bag & Purse for Women</Link>
+                    <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Breifcase</Link>
+                    <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Wallets</Link>
                   </div>
                 </section>
               </section>
@@ -51,13 +51,13 @@ export default function Footer() {
                 <section>
                   <div className='flex flex-col gap-4'>
                     <p className='mb-6'></p>
-                    <Link className='hover:translate-x-1 duration-300  hover:text-[#e7e7e7]' href='/'>FAQs</Link>
-                    <Link className='hover:translate-x-1 duration-300  hover:text-[#e7e7e7]' href='/'>About Us</Link>
-                    <Link className='hover:translate-x-1 duration-300  hover:text-[#e7e7e7]' href='/'>Vendors</Link>
-                    <Link className='hover:translate-x-1 duration-300  hover:text-[#e7e7e7]' href='/'>Affiliate</Link>
-                    <Link className='hover:translate-x-1 duration-300  hover:text-[#e7e7e7]' href='/'>Terms of Service</Link>
-                    <Link className='hover:translate-x-1 duration-300  hover:text-[#e7e7e7]' href='/'>Shipping Information</Link>
-                    <Link className='hover:translate-x-1 duration-300  hover:text-[#e7e7e7]' href='/'>Reviews and Testimonials</Link>
+                    <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>FAQs</Link>
+                    <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>About Us</Link>
+                    <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Vendors</Link>
+                    <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Affiliate</Link>
+                    <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Terms of Service</Link>
+                    <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Shipping Information</Link>
+                    <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Reviews and Testimonials</Link>
                   </div>
                 </section>
               </section>

@@ -3,7 +3,6 @@ import "./globals.css";
 import { TopNav } from "./components/TopNav";
 import { BottomNav } from "./components/BottomNav";
 import Footer from "./components/Footer";
-import HomeProduct from "./components/HomeProduct";
 
 const urbanist = Urbanist({ subsets: ["latin"] });
 
@@ -14,15 +13,17 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={urbanist.className}>
         <div>
-          <TopNav />
-          <BottomNav />
+          <div className="fixed inset-x-0 z-[1] border-b-0 shadow-md bg-[whitesmoke]">
+            <TopNav />
+            <BottomNav />
+          </div>
         </div>
-        <div className="min-h-screen">
+        <div className="pt-40 min-h-screen">
           {children}
-          <HomeProduct />
+        
         </div>
         
         <Footer />

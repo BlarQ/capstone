@@ -6,7 +6,7 @@ import { FiShoppingCart } from "react-icons/fi"
 
 export const BottomNav = () => {
     return (
-        <nav className='flex justify-between items-center px-10 h-24'>
+        <nav className='flex justify-between items-center px-10 h-24 text-[#2e4053]'>
             <div className='flex items-center justify-start gap-16'>
                 <Link className='text-xl font-semibold' href='/'>
                     TrendLuxe
@@ -25,7 +25,7 @@ export const BottomNav = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link href='/'>Product</Link>
+                        <Link href='/product'>Product</Link>
                     </li>
                 </ul>
             </div>
