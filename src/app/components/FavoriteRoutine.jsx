@@ -16,6 +16,7 @@ export default function FavoriteRoutine() {
 
         <div className='grid grid-cols-3'>
             <div>
+                <video src='/public/test1.mp4' autoPlay='true' loop='true' muted='true'/>
                 <div className=''>
                     <Image src='' alt='' width={300} height={700} />
                 </div>
