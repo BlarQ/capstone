@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="scroll-smooth">
       <body className={urbanist.className}>
         <div>
-          <div className="fixed inset-x-0 z-[1] border-b-0 shadow-md bg-[whitesmoke]">
+          <div className="fixed inset-x-0 z-[1] border-b-0 shadow-transparent bg-white">
             <TopNav />
             <BottomNav />
           </div>
