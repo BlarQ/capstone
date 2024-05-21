@@ -1,9 +1,10 @@
 import React from 'react'
+import AboutHead from '../components/AboutHead'
 
 export default function page() {
   return (
     <div>
-        <h1>About Page</h1>
+        <AboutHead />
     </div>
   )
 }

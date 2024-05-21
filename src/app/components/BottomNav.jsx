@@ -17,7 +17,7 @@ export const BottomNav = () => {
                         <Link href='/'>Home</Link>
                     </li>
                     <li>
-                        <Link href='/'>About</Link>
+                        <Link href='/about'>About</Link>
                     </li>
                     <li>
                         <Link className='flex justify-center items-center' href='/'>Pages
