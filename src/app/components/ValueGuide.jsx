@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function ValueGuide() {
   return (
-    <div className='grid grid-cols-2 mx-8 my-20 px-5 items-center'>
+    <div className='grid grid-cols-2 mx-8 my-32 px-5 items-center'>
         <div>
             <Image className='' src='/valueimg.jpg' alt='Shoe, glass, bag, belt and cloth on a gray rug' width={600} height={400} />
         </div>
