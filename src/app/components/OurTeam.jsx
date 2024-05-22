@@ -29,9 +29,9 @@ export default function OurTeam() {
                 </div>
 
                 <div>
-                    <p className='text-xl mt-4 font-bold text-[gray]'>Product Designer</p>
-                    <h2 className='text-4xl my-4 font-bold'>Liam Bennett</h2>
-                    <p className='font-bold text-[gray]'>Leads with a vision for innovation and excellence, guiding our brand to new heights.</p>
+                    <p className='text-xl ml-2 mt-2 font-bold text-[gray]'>Product Designer</p>
+                    <h2 className='text-4xl ml-2 my-4 font-bold'>Liam Bennett</h2>
+                    <p className='font-bold ml-2 text-[gray]'>Leads with a vision for innovation and excellence, guiding our brand to new heights.</p>
                 </div>
             </div>
             <div className='lg:flex lg:flex-col hover:text-[#34c759] cursor-pointer duration-500 sm:grid sm:grid-cols-2 sm:items-center gap-4'>
@@ -41,9 +41,9 @@ export default function OurTeam() {
                 </div>
 
                 <div>
-                    <p className='text-xl mt-4 font-bold text-[gray]'>Marketer</p>
-                    <h2 className='text-4xl my-4 font-bold'>Noah Harris</h2>
-                    <p className='font-bold text-[gray]'>Expertly connects our fashion passion with our customers, making every shopping experience special.</p>
+                    <p className='text-xl ml-2 mt-2 font-bold text-[gray]'>Marketer</p>
+                    <h2 className='text-4xl ml-2 my-4 font-bold'>Noah Harris</h2>
+                    <p className='font-bold ml-2 text-[gray]'>Expertly connects our fashion passion with our customers, making every shopping experience special.</p>
                 </div>
             </div>
         </div>
