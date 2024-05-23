@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={urbanist.className}>
+      <body className={`${urbanist.className}`}>
         <div>
           <div className="fixed inset-x-0 z-[1] border-b-0 shadow-transparent bg-white">
             <TopNav />
