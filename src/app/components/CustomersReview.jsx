@@ -10,18 +10,22 @@ const prdReviews = productReviews.filter(datum => datum.type =='review').slice(0
 
 export default function CustomersReview() {
     const reviewLog = prdReviews.map(review => (
-        <div key={review.id} className={`${review.color}`}>
-            <div className='flex flex-col items-start'>
+        <div key={review.id} className={`${review.color} rounded-xl shadow-sm hover:shadow-lg duration-500`}>
+            <div className='flex flex-col items-start gap-y-10 min-h-fit p-10'>
                 {/* <div>{review.rating}</div> */}
                 <Stack spacing={1}>
-                <Rating name="half-rating" defaultValue={review.rating} precision={0.5} readOnly style={{color: `${review.iconColor}`}}/>
+                <Rating name="half-rating" defaultValue={review.rating} precision={0.5} className={`${review.iconColor} text-3xl font-extrabold`}/>
                 </Stack>
-                <div className='flex justify-center gap-x-4'>
-                    <Image className='rounded-full' src={`/${review.name.split(' ').join('-')}.png`} alt={review.name} width={50} height={50} />
 
-                    <div className='font-bold'>
-                        <h2>{review.name}</h2>
-                        <p>{review.age} years old</p>
+                <div className='font-bold text-[gray]'>
+                    <p>{review.review}</p>
+                </div>
+                <div className='flex justify-center gap-x-4'>
+                    <Image className={`${review.ibgColor} rounded-full`} src={`/${review.name.split(' ').join('-')}.png`} alt={review.name} width={60} height={60} />
+
+                    <div className='font-bold flex flex-col justify-between'>
+                        <h2 className='text-xl'>{review.name}</h2>
+                        <p className={`${review.iconColor} font-bold text-xl`}>{review.age} years old</p>
                     </div>
                 
                 </div>
@@ -29,7 +33,7 @@ export default function CustomersReview() {
         </div>
     ))
   return (
-    <div className='mx-8'>
+    <div className='mx-8 mb-20'>
         <div className='flex justify-between items-end'>
             <div>
                 <h2 className='text-6xl font-bold'>Real people, real results</h2>
@@ -37,11 +41,12 @@ export default function CustomersReview() {
             </div>
 
             <div>
+                
                 <Link href='/' className='flex bg-[#2e4053] py-4 px-5 sm:max-w-36 items-center justify-center rounded-full text-white font-bold hover:scale-95 duration-300'>Shop Now <MdArrowOutward className='text-xl ml-1' /> </Link>
             </div>
         </div>
 
-        <div className='grid grid-cols-3'>
+        <div className='grid lg:grid-cols-3 grid-cols-1 my-4 gap-4'>
             {reviewLog}
         </div>
     </div>

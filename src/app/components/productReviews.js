@@ -6,7 +6,9 @@ export const productReviews = [
       age: 34,
       type: "review",
       rating: 3.5,
-      color: 'bg-red-200'
+      color: 'bg-red-50',
+      iconColor: 'text-red-500',
+      ibgColor: 'bg-red-500'
     },
     {
       id: 2,
@@ -15,7 +17,9 @@ export const productReviews = [
       age: 28,
       type: "review",
       rating: 5, 
-      color: 'bg-green-200'
+      color: 'bg-green-50',
+      iconColor: 'text-green-500',
+      ibgColor: 'bg-green-500'
     },
     {
       id: 3,
@@ -24,7 +28,9 @@ export const productReviews = [
       age: 22,
       type: "review",
       rating: 4.5,
-      color: 'bg-blue-200'
+      color: 'bg-blue-50',
+      iconColor: 'text-blue-500',
+      ibgColor: 'bg-blue-500'
 
     },
     {
@@ -34,7 +40,7 @@ export const productReviews = [
       age: 45,
       type: "review",
       rating: 3.5,
-      color: 'bg-yellow-200'
+      color: 'bg-yellow-100'
     },
     {
       id: 5,
@@ -43,7 +49,7 @@ export const productReviews = [
       age: 31,
       type: "review",
       rating: 4,
-      color: 'bg-orange-200'
+      color: 'bg-orange-100'
     }
   ];
   

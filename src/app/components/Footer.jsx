@@ -5,7 +5,7 @@ import styles from './footer.module.css'
 export default function Footer() {
   return (
     <footer>
-        <h2 className={styles.fhead}>TrendLuxe</h2>
+        {/* <h2 className={styles.fhead}>TrendLuxe</h2> */}
         <div className='bg-[#2e4053] text-white p-10'>
             <div className='flex justify-center items-center my-10'>
               <form className='flex justify-center items-center rounded-full bg-[#f7f7f7] w-[70%]'>
