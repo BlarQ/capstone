@@ -5,7 +5,7 @@ import { data } from "./data";
 import { FaPlus } from 'react-icons/fa6';
 
 
-const productData = data.filter(datum => datum.type =='Shoe').slice(0, 6)
+const productData = data.filter(datum => datum.type =='Shoe').slice(0, 3)
 
 export default function HomeProduct() {
     const productLog = productData.map(product =>(
@@ -33,7 +33,7 @@ export default function HomeProduct() {
     ))
   return (
     <section>
-        <div className='grid sm:grid-cols-3 grid-cols-1 sm:grid-rows-2 grid-rows-3 gap-4 mx-8 my-10'>
+        <div className='grid sm:grid-cols-3 grid-cols-1 gap-4 mx-8 my-10'>
             {productLog}
         </div>
     </section>

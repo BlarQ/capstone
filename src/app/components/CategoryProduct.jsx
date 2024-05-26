@@ -4,7 +4,7 @@ import React from 'react'
 import { FaPlus } from 'react-icons/fa6'
 import { data } from './data'
 
-const categoryData = data.filter(datum => datum.type =='Shirt').slice(0, 6)
+const categoryData = data.filter(datum => datum.type =='Shirt').slice(0, 3)
 
 
 export default function CategoryProduct() {
@@ -33,7 +33,7 @@ export default function CategoryProduct() {
     )) 
   return (
     <section>
-        <div className='grid sm:grid-cols-3 grid-cols-1 sm:grid-rows-2 grid-rows-3 gap-4 mx-8 my-10'>
+        <div className='grid sm:grid-cols-3 grid-cols-1 gap-4 mx-8 my-10'>
             {categoryLog}
         </div>
     </section>

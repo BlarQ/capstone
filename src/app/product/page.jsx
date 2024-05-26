@@ -2,6 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { data } from "../components/data";
+import HomeProduct from '../components/HomeProduct';
+import CategoryProduct from '../components/CategoryProduct';
 
 const watchData = data.filter(datum => datum.type === 'Wristwatch').slice(0, 3)
 
@@ -32,7 +34,7 @@ export default function page() {
     ))
   return (
     <div>
-        <div>
+        <div className='my-4'>
         <h1 className='text-center font-bold text-3xl text-[#2e4053]'>Our Product Categories</h1>
             <div className='flex items-center justify-between mx-10'>
                 <p className='text-2xl font-bold text-[#2e4053]'>Wristwatch</p>
@@ -40,10 +42,30 @@ export default function page() {
                 <Link className='font-bold text-[#2e4053]' href='/'>See more</Link>
             </div>
             <hr className='mx-8'/>
-            <div className='grid sm:grid-cols-3 grid-cols-1 sm:grid-rows-3 grid-rows-3 gap-4 mx-8 mt-10'>
+            <div className='grid sm:grid-cols-3 grid-cols-1 gap-4 mx-8 mt-10'>
 
                 {categoryLog}
             </div>
+        </div>
+
+        <div className='py-4'>
+            <div className='flex items-center justify-between mx-10'>
+                <p className='text-2xl font-bold text-[#2e4053]'>Shoes</p>
+
+                <Link className='font-bold text-[#2e4053]' href='/'>See more</Link>
+            </div>
+            <hr className='mx-8'/>
+            <HomeProduct />
+        </div>
+
+        <div>
+            <div className='flex items-center justify-between mx-10'>
+                <p className='text-2xl font-bold text-[#2e4053]'>Shirts</p>
+
+                <Link className='font-bold text-[#2e4053]' href='/'>See more</Link>
+            </div>
+            <hr className='mx-8'/>
+            <CategoryProduct />
         </div>
     </div>
   )
