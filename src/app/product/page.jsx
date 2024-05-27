@@ -35,7 +35,27 @@ export default function page() {
   return (
     <div>
         <div className='my-4'>
-        <h1 className='text-center font-bold text-3xl text-[#2e4053]'>Our Product Categories</h1>
+            <h1 className='text-center font-bold text-3xl text-[#2e4053]'>Our Product Categories</h1>
+
+            <div className='flex justify-center items-center my-8 gap-4 font-semibold text-[gray]'>
+                <div>
+
+                    <Link className='hover:text-black duration-300' href='/'>ALL</Link>
+                </div>
+                <div className='border-x-2 px-4'>
+
+                    <Link className='hover:text-black duration-300' href='/'>WRISTWATCH</Link>
+                </div>
+                <div className='border-r-2 pr-4'>
+
+                    <Link className='hover:text-black duration-300' href='/'>FOOTWEARS</Link>
+                </div>
+                <div>
+
+                    <Link className='hover:text-black duration-300' href='/'>SHIRTS</Link>
+                </div>
+            </div>
+
             <div className='flex items-center justify-between mx-10'>
                 <p className='text-2xl font-bold text-[#2e4053]'>Wristwatch</p>
 
