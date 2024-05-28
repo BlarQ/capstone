@@ -2,7 +2,6 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { MdKeyboardArrowDown } from "react-icons/md"
-import { FiShoppingCart } from "react-icons/fi"
 import { RxHamburgerMenu } from "react-icons/rx"
 import { RiCloseFill } from "react-icons/ri";
 import Cart from './Cart'
