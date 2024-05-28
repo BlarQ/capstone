@@ -12,7 +12,7 @@ export default function page() {
     const categoryLog = watchData.map(product =>(
         <section key={product.id}>
             <div className='flex justify-center text-[#2e4053] items-center border-2 border-[#f7f7f7] hover:bg-[#2e4053] duration-300 hover:text-white hover:shadow-sm flex-col'>
-                <Link href={`/${product.name.split(' ').join('-')}`}>
+                <Link href={`/product/${product.name.split(' ').join('-')}`}>
                     <h2 className='text-3xl text-left my-4 font-bold'>{product.name}</h2>
                     <p className='text-xl text-left font-semibold'><span>&#8358;</span><span>{product.amount}</span></p>
                     <section>
@@ -59,7 +59,7 @@ export default function page() {
             <div className='flex items-center justify-between mx-10'>
                 <p className='text-2xl font-bold text-[#2e4053]'>Wristwatch</p>
 
-                <Link className='font-bold text-[#2e4053]' href='/'>See more</Link>
+                <Link className='font-bold text-[rgb(46,64,83)]' href='/'>See more</Link>
             </div>
             <hr className='mx-8'/>
             <div className='grid sm:grid-cols-3 grid-cols-1 gap-4 mx-8 mt-10'>

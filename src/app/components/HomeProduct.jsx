@@ -11,7 +11,7 @@ export default function HomeProduct() {
     const productLog = productData.map(product =>(
         <section key={product.id}>
             <div className='flex justify-center items-center border-2 text-[#2e4053] border-[#f7f7f7] hover:bg-[#2e4053] duration-300 hover:text-white hover:shadow-sm flex-col'>
-                <Link href={`/${product.name.split(' ').join('-')}`}>
+                <Link href={`/product/${product.name.split(' ').join('-')}`}>
                     <h2 className='text-3xl text-left my-4 font-bold'>{product.name}</h2>
                     <p className='text-xl text-left font-semibold'><span>&#8358;</span><span>{product.amount}</span></p>
                     <section>
