@@ -26,7 +26,7 @@ export default function page() {
                     <p>Add to cart</p>
                 </Link>
 
-                <Link className='flex items-center justify-center mt-4 mb-10 hover:text-[#34c759] duration-300' href='/'>
+                <Link className='flex items-center justify-center mt-4 mb-10 hover:text-[#34c759] duration-300' href={`/product/${product.name.split(' ').join('-')}`}>
                     Learn more
                 </Link>
             </div>
@@ -40,26 +40,26 @@ export default function page() {
             <div className='flex justify-center items-center my-8 gap-4 font-semibold text-[gray]'>
                 <div>
 
-                    <Link className='hover:text-black duration-300' href='/'>ALL</Link>
+                    <Link className='text-[#2e4053]' href='/product'>ALL</Link>
                 </div>
                 <div className='border-x-2 px-4'>
 
-                    <Link className='hover:text-black duration-300' href='/'>WRISTWATCH</Link>
+                    <Link className='hover:text-[#2e4053] duration-300' href='/watchcategory'>WRISTWATCH</Link>
                 </div>
                 <div className='border-r-2 pr-4'>
 
-                    <Link className='hover:text-black duration-300' href='/'>FOOTWEARS</Link>
+                    <Link className='hover:text-[#2e4053] duration-300' href='/shoecategory'>FOOTWEARS</Link>
                 </div>
                 <div>
 
-                    <Link className='hover:text-black duration-300' href='/'>SHIRTS</Link>
+                    <Link className='hover:text-[#2e4053] duration-300' href='/shirtcategory'>SHIRTS</Link>
                 </div>
             </div>
 
             <div className='flex items-center justify-between mx-10'>
                 <p className='text-2xl font-bold text-[#2e4053]'>Wristwatch</p>
 
-                <Link className='font-bold text-[rgb(46,64,83)]' href='/'>See more</Link>
+                <Link className='font-bold text-[rgb(46,64,83)]' href='/watchcategory'>See more</Link>
             </div>
             <hr className='mx-8'/>
             <div className='grid sm:grid-cols-3 grid-cols-1 gap-4 mx-8 mt-10'>
@@ -70,9 +70,9 @@ export default function page() {
 
         <div className='py-4'>
             <div className='flex items-center justify-between mx-10'>
-                <p className='text-2xl font-bold text-[#2e4053]'>Shoes</p>
+                <p className='text-2xl font-bold text-[#2e4053]'>Footwears</p>
 
-                <Link className='font-bold text-[#2e4053]' href='/'>See more</Link>
+                <Link className='font-bold text-[#2e4053]' href='/shoecategory'>See more</Link>
             </div>
             <hr className='mx-8'/>
             <HomeProduct />
@@ -82,7 +82,7 @@ export default function page() {
             <div className='flex items-center justify-between mx-10'>
                 <p className='text-2xl font-bold text-[#2e4053]'>Shirts</p>
 
-                <Link className='font-bold text-[#2e4053]' href='/'>See more</Link>
+                <Link className='font-bold text-[#2e4053]' href='/shirtcategory'>See more</Link>
             </div>
             <hr className='mx-8'/>
             <CategoryProduct />

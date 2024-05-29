@@ -25,7 +25,7 @@ export default function CategoryProduct() {
                     <p>Add to cart</p><FaPlus />
                 </Link>
 
-                <Link className='flex items-center justify-center mt-4 mb-10 hover:text-[#34c759] duration-300' href='/'>
+                <Link className='flex items-center justify-center mt-4 mb-10 hover:text-[#34c759] duration-300' href={`/product/${category.name.split(' ').join('-')}`}>
                     Learn more
                 </Link>
             </div>
