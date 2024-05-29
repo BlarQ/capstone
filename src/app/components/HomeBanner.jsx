@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function HomeBanner() {
   return (
-    <div className={`${styles.nav} w-[85%] md:w-[90%]`}>
+    <div className={styles.nav}>
       <div className='flex items-center h-[95vh]'>
         <div className='px-4 -mt-40 sm:mt-0 md:pl-16 md:pr-[40rem]'>
           <p className='text-4xl md:text-7xl text-white font-extrabold'>
