@@ -40,7 +40,7 @@ export default function page() {
             <div className='flex justify-center items-center my-8 gap-4 font-semibold text-[gray]'>
                 <div>
 
-                    <Link className='text-[#2e4053]' href='/product'>ALL</Link>
+                    <Link className='hover:text-[#2e4053] duration-300' href='/allproduct'>ALL</Link>
                 </div>
                 <div className='border-x-2 px-4'>
 
