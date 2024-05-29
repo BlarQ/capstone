@@ -5,3 +5,20 @@
     margin-inline: 30px;
     max-width: 100%;
 }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .nav {
+        margin-inline: 15px;
+        max-height: 70vh; 
+        background-position: center;
+    }
+}
+
+/* Smaller mobile devices */
+@media (max-width: 480px) {
+    .nav {
+        margin-inline: 10px; 
+        max-height: 60vh; 
+    }
+}

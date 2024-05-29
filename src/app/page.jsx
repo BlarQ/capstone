@@ -14,7 +14,7 @@ export default function Home() {
       <HomeCategory />
       <CategoryProduct />
       <BelowCartImg />
-      <FavoriteRoutine />
+      {/* <FavoriteRoutine /> */}
     </main>
   );
 }
