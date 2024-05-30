@@ -33,7 +33,7 @@ export default function CategoryProduct() {
     )) 
   return (
     <section>
-        <div className='grid sm:grid-cols-3 grid-cols-1 gap-4 mx-8 my-10'>
+        <div className='grid sm:grid-cols-3 grid-cols-1 gap-4 mx-4 md:mx-8 my-10'>
             {categoryLog}
         </div>
     </section>

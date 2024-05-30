@@ -5,7 +5,7 @@ import { MdArrowOutward } from 'react-icons/md'
 
 export default function BelowCartImg() {
   return (
-    <div className='w-[85%] md:w-[90%] mx-5 md:mx-8 flex flex-col-reverse lg:flex-row items-start justify-between gap-10'>
+    <div className='w-[85%] md:w-[90%] mx-5 md:mx-8 flex flex-col-reverse lg:flex-row items-start justify-between md:gap-10'>
       <Image 
         src="/homeimg4.jpg" 
         alt='Man on black jacket' 

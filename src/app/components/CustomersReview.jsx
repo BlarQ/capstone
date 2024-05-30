@@ -25,7 +25,7 @@ export default function CustomersReview() {
 
                     <div className='font-bold flex flex-col justify-between'>
                         <h2 className='text-xl'>{review.name}</h2>
-                        <p className={`${review.iconColor} font-bold text-xl`}>{review.age} years old</p>
+                        <p className={`${review.iconColor} font-bold text-xl`}>{(new Date().getFullYear()) - (new Date(review.age).getFullYear())} years old</p>
                     </div>
                 
                 </div>

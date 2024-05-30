@@ -1,21 +1,44 @@
 "use client"
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import { MdKeyboardArrowDown } from "react-icons/md"
 import { RxHamburgerMenu } from "react-icons/rx"
 import { RiCloseFill } from "react-icons/ri";
 import Cart from './Cart'
 import SearchBar from './SearchBar'
+import PageHover from './PageHover'
 
 
 export const BottomNav = () => {
+    
     const [hide, setHide] = useState(false)
+    const [page, setPage] = useState(false)
+    const suggestionBoxRef = useRef(null);
+
+    function showPage(){
+        setPage(!page)
+    }
 
     function showNav(){
         setHide(!hide)
     }
 
+    // Click outside handler
+    useEffect(() => {
+        function handleClickOutside(event) {
+            if (suggestionBoxRef.current && !suggestionBoxRef.current.contains(event.target)) {
+                setFilteredItems([]);
+            }
+        }
+        
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [suggestionBoxRef]);
+
     return (
+        <div className='relative'>
         <nav className='flex justify-between items-center px-10 h-24 text-[#2e4053]'>
             <div className='flex items-center justify-start gap-16'>
                 <Link className='text-xl font-semibold' href='/'>
@@ -30,7 +53,7 @@ export const BottomNav = () => {
                         <Link href='/about'>About</Link>
                     </li>
                     <li>
-                        <Link className='flex justify-center items-center' href='/'>Pages
+                        <Link className='flex justify-center items-center' onMouseOver={showPage} href='/'>Pages
                             <MdKeyboardArrowDown />
                         </Link>
                     </li>
@@ -62,5 +85,10 @@ export const BottomNav = () => {
                 </ul>
             </div>
         </nav>
+            {page &&
+                <PageHover />
+            }
+            
+        </div>
     )
 }

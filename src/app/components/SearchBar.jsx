@@ -54,7 +54,7 @@ export default function SearchBar() {
 
             {
                 filteredItems.length > 0 && (
-                    <div ref={suggestionBoxRef} className='absolute top-32 p-4 bg-[#2e405359] w-1/4 text-[#2e4053] font-bold rounded-xl left-[60%] -translate-x-1/2 flex flex-col gap-2'>
+                    <div ref={suggestionBoxRef} className='absolute top-32 p-4 bg-[#2e4053] text-white w-1/4 font-bold rounded-xl left-[60%] -translate-x-1/2 flex flex-col gap-2'>
                         {
                             filteredItems.map(item => (
                                 <section key={item.id}>
