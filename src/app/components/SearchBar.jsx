@@ -42,7 +42,7 @@ export default function SearchBar() {
         <div className='my-10'>
             <div className='flex justify-center items-center my-10'>
                 <input 
-                    className='border-2 px-4 rounded-full w-96 h-10 py-5 outline-none text-[#2e4053] font-bold' 
+                    className='border-2 px-4 rounded-full w-[80%] md:w-96 h-1 md:h-10 py-4 md:py-5 outline-none text-[#2e4053] md:font-bold text-xs md:text-base italic md:not-italic' 
                     type="text" 
                     name="search" 
                     id="search" 
@@ -54,7 +54,7 @@ export default function SearchBar() {
 
             {
                 filteredItems.length > 0 && (
-                    <div ref={suggestionBoxRef} className='absolute top-32 p-4 bg-[#2e4053] text-white w-1/4 font-bold rounded-xl left-[60%] -translate-x-1/2 flex flex-col gap-2'>
+                    <div ref={suggestionBoxRef} className='absolute top-32 p-4 bg-[#2e4053] text-white md:w-1/4 font-bold rounded-xl left-[60%] -translate-x-1/2 flex flex-col gap-2'>
                         {
                             filteredItems.map(item => (
                                 <section key={item.id}>

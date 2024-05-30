@@ -66,7 +66,7 @@ export default function Footer() {
             <section className='flex justify-center items-center my-10'>
               <div className='text-center'>
                 <h2>TrendLuxe</h2>
-                <p>Copyright &copy; {new Date().getFullYear()} TrendLuxe | Designed by ColliBits</p>
+                <p>Copyright &copy; {new Date().getFullYear()} TrendLuxe | Designed by ColliBits/BlarQ</p>
               </div>
             </section>
         </div>

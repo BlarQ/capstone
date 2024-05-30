@@ -12,7 +12,7 @@ export default function HomeBanner() {
             Unlock the essence of timeless style<span className='text-[#2e4053]'>.</span>
           </p>
           <Link href='/'
-            className='flex bg-[#2e4053] mt-10 py-4 px-5 max-w-36 items-center justify-center rounded-full text-white font-bold hover:scale-95 duration-300'>
+            className='flex bg-[#2e4053] mt-10 py-4 px-5 md:max-w-36 w-full items-center justify-center rounded-full text-white font-bold hover:scale-95 duration-300'>
               Shop Now <MdArrowOutward className='text-xl ml-1' />
           </Link>
         </div>

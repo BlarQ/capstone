@@ -6,7 +6,7 @@ import { MdArrowOutward } from 'react-icons/md'
 export default function FavoriteRoutine() {
     return (
         <div className='my-16 mx-8'>
-            <div className='flex justify-between items-end'>
+            <div className='hidden md:flex justify-between items-end'>
                 <h2 className='text-6xl font-bold w-[40%] text-[#2e4053]'>Your Favorite Fashion Routines</h2>
 
                 <div>
@@ -15,7 +15,7 @@ export default function FavoriteRoutine() {
             </div>
 
             <div>
-                <div className='grid grid-cols-3 gap-20 mt-5'>
+                <div className='hidden md:grid grid-cols-3 gap-20 mt-5'>
                     <div className='h-[700px]'>
                         <video className='absolute h-[700px] -z-10 scale-x-95 ' src='/test4.mp4' autoPlay loop muted />
                         <div className='flex flex-col justify-between space-y-[30rem]'>

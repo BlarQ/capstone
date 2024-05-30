@@ -2,11 +2,14 @@
 import Link from 'next/link'
 import React, { useContext, useEffect, useRef, useState } from 'react'
 import { MdKeyboardArrowDown } from "react-icons/md"
-import { RxHamburgerMenu } from "react-icons/rx"
 import { RiCloseFill } from "react-icons/ri";
 import Cart from './Cart'
 import SearchBar from './SearchBar'
 import PageHover from './PageHover'
+import { GiHamburgerMenu } from "react-icons/gi";
+
+
+
 
 
 export const BottomNav = () => {
@@ -39,7 +42,7 @@ export const BottomNav = () => {
 
     return (
         <div className='relative'>
-        <nav className='flex justify-between items-center px-10 h-24 text-[#2e4053]'>
+        <nav className='flex justify-between items-center px-4 md:px-10 h-24 text-[#2e4053]'>
             <div className='flex items-center justify-start gap-16'>
                 <Link className='text-xl font-semibold' href='/'>
                     TrendLuxe
@@ -80,8 +83,9 @@ export const BottomNav = () => {
 
             <div className='sm:hidden cursor-pointer'>
                 <ul onClick={showNav}>
-                    <RxHamburgerMenu className={hide ? "hidden" : "block"}/>
-                    <RiCloseFill className={!hide ? "hidden" : "block"}/>
+                    <GiHamburgerMenu className={hide ? "hidden" : "block"}/>
+                    <RiCloseFill className={`${!hide ? "hidden" : "block"} font-bold text-xl`}/>
+
                 </ul>
             </div>
         </nav>
