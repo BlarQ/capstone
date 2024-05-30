@@ -47,7 +47,7 @@ export default function SearchBar() {
                     name="search" 
                     id="search" 
                     onChange={searchShirt} 
-                    value={query} 
+                    defaultValue={query} 
                     placeholder='Search here for TrendItems' 
                 />
             </div>
