@@ -5,6 +5,7 @@ import { MdKeyboardArrowDown } from "react-icons/md"
 import { RxHamburgerMenu } from "react-icons/rx"
 import { RiCloseFill } from "react-icons/ri";
 import Cart from './Cart'
+import SearchBar from './SearchBar'
 
 
 export const BottomNav = () => {
@@ -45,10 +46,14 @@ export const BottomNav = () => {
                 </ul>
             </div>
 
+            <div>
+                <SearchBar />
+            </div>
             <div className='justify-center items-center space-x-7 hidden sm:flex'>
                 <Cart />
                 <Link className='bg-[#34c759] text-white py-3 px-4 rounded-full font-semibold hover:scale-95 hover:transition duration-500' href='/'>Get in touch</Link>
             </div>
+
 
             <div className='sm:hidden cursor-pointer'>
                 <ul onClick={showNav}>
