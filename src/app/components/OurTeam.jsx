@@ -9,7 +9,7 @@ export default function OurTeam() {
             <p className='font-bold md:mx-10 text-sm md:text-base text-center my-6 text-[gray] lg:mx-[20%]'>Our C.E.O. drives innovation and excellence. Our Product Designer crafts unique, stylish items. Our Marketer connects our passion for fashion with our customers. Together, we create exceptional shopping experiences.</p>
         </div>
 
-        <div className='grid sm:grid-cols-1 lg:grid-cols-3 md:gap-4 gap-8 mx-4 my-8'>
+        <div className='grid sm:grid-cols-1 lg:grid-cols-3 md:gap-4 gap-8 md:mx-4 my-8'>
             <div className='lg:flex lg:flex-col hover:text-[#34c759] cursor-pointer duration-500 sm:grid sm:grid-cols-2 sm:items-center gap-4'>
                 <div>
 
@@ -18,7 +18,7 @@ export default function OurTeam() {
 
                 <div className='md:ml-2'>
                     <p className='text-xl mt-2 font-bold text-[gray]'>C.E.O. & Founder</p>
-                    <h2 className='text-4xl my-4 font-bold'>Alex Carter</h2>
+                    <h2 className='text-4xl md:my-4 my-1 font-bold'>Alex Carter</h2>
                     <p className='font-bold text-[gray]'>Leads with a vision for innovation and excellence, guiding our brand to new heights.</p>
                 </div>
             </div>
@@ -30,8 +30,8 @@ export default function OurTeam() {
 
                 <div className='md:ml-2'>
                     <p className='text-xl mt-2 font-bold text-[gray]'>Product Designer</p>
-                    <h2 className='text-4xl my-4 font-bold'>Liam Bennett</h2>
-                    <p className='font-bold text-[gray]'>Leads with a vision for innovation and excellence, guiding our brand to new heights.</p>
+                    <h2 className='text-4xl md:my-4 my-1 font-bold'>Liam Bennett</h2>
+                    <p className='font-bold text-[gray]'>He excels in creating intuitive, user-friendly designs that enhance user experience. His collaborative approach and technical expertise make him an invaluable asset to our team.</p>
                 </div>
             </div>
             <div className='lg:flex lg:flex-col hover:text-[#34c759] cursor-pointer duration-500 sm:grid sm:grid-cols-2 sm:items-center gap-4'>
@@ -42,7 +42,7 @@ export default function OurTeam() {
 
                 <div className='md:ml-2'>
                     <p className='text-xl mt-2 font-bold text-[gray]'>Marketer</p>
-                    <h2 className='text-4xl my-4 font-bold'>Noah Harris</h2>
+                    <h2 className='text-4xl md:my-4 my-1 font-bold'>Noah Harris</h2>
                     <p className='font-bold text-[gray]'>Expertly connects our fashion passion with our customers, making every shopping experience special.</p>
                 </div>
             </div>

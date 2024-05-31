@@ -12,7 +12,7 @@ export default function Page() {
         setItem(e.target.value)
     }
 
-    const filteredShirt = data.filter(datum => datum.name.toLowerCase().includes(item.toLowerCase()) || datum.type.toLowerCase().includes())
+    const filteredShirt = data.filter(datum => (datum.name.toLowerCase().includes(item.toLowerCase()) || datum.type.toLowerCase().includes(item.toLowerCase())))
 
     const shirtProduct = filteredShirt.map(shirt =>(
         <section key={shirt.id}>

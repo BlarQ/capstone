@@ -34,13 +34,13 @@ export default function CustomersReview() {
     ))
   return (
     <div className='mx-8 mb-20'>
-        <div className='flex justify-between items-end'>
+        <div className='flex flex-col sm:flex-row sm:justify-between sm:items-end'>
             <div>
-                <h2 className='text-6xl font-bold'>Real people, real results</h2>
+                <h2 className='sm:text-6xl text-3xl w-[60%] sm:w-full font-bold'>Real people, real results</h2>
                 <p className='max-w-[39rem] my-2 font-bold text-[gray]'>We value your feedback and would love to hear your thoughts on your shopping experience. Please leave a review and help us improve our service. Your insights are important to us and to future customers. Thank you for shopping with us!</p>
             </div>
 
-            <div>
+            <div className='py-4 sm:py-0'>
                 
                 <Link href='/' className='flex bg-[#2e4053] py-4 px-5 sm:max-w-36 items-center justify-center rounded-full text-white font-bold hover:scale-95 duration-300'>Shop Now <MdArrowOutward className='text-xl ml-1' /> </Link>
             </div>
