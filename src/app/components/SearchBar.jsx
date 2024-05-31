@@ -17,8 +17,8 @@ export default function SearchBar() {
         }
 
         const filtered = data.filter(item => 
-            item.name.toLowerCase().includes(value) || 
-            item.type.toLowerCase().includes(value)
+            (item.name.toLowerCase().includes(value) || 
+            item.type.toLowerCase().includes(value))
         ).slice(0, 5);
         
         setFilteredItems(filtered);
@@ -59,7 +59,7 @@ export default function SearchBar() {
                             filteredItems.map(item => (
                                 <section key={item.id}>
                                     <Link href={`/product/${item.name.split(' ').join('-')}`}>
-                                        <div onClick={() => setFilteredItems([])}>
+                                        <div className='hover:bg-slate-600 py-2 px-2 rounded-xl duration-300' onClick={() => setFilteredItems([])}>
                                             {item.name}
                                         </div>
                                     </Link>
