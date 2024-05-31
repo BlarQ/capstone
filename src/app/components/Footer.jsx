@@ -6,23 +6,23 @@ export default function Footer() {
   return (
     <footer>
         {/* <h2 className={styles.fhead}>TrendLuxe</h2> */}
-        <div className='bg-[#2e4053] text-white p-10'>
-            <div className='flex justify-center items-center my-10'>
-              <form className='flex justify-center items-center rounded-full bg-[#f7f7f7] w-[70%]'>
+        <div className='bg-[#2e4053] text-white md:p-10 p-5'>
+            <div className='flex justify-center items-center md:my-10 my-5'>
+              <form className='flex justify-center items-center rounded-full bg-[#f7f7f7] md:w-[70%]'>
                 <input type="email" name="email" placeholder='Enter your email' id="email" className='w-[100%] rounded-l-full py-4 bg-inherit focus:outline-none px-8 text-black text-base font-bold' />
                 <button type="submit" className='py-3 px-6 rounded-full bg-[#34c759] mr-1 hover:scale-95 hover:transition ease-in-out duration-500'>Subscribe</button>
               </form>
             </div>
 
-            <section className='grid sm:grid-cols-4 grid-rows-1 sm:gap-32 gap-10'>
-              <div className='text-5xl'>
+            <section className='grid sm:grid-cols-4 grid-rows-1 sm:gap-32 md:gap-10 gap-8'>
+              <div className='md:text-5xl text-4xl md:text-left text-center'>
                 <p className='mb-10'>Discover Your Style... </p>
                 <p className='text-4xl'>@TrendLuxe</p>
               </div>
 
               <section>
                 <section>
-                  <div className='flex flex-col gap-4'>
+                  <div className='flex flex-col md:gap-4 gap-2'>
                     <p className='text-lg font-bold'>Pages</p>
                     <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Home</Link>
                     <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/about'>About</Link>
@@ -35,7 +35,7 @@ export default function Footer() {
 
               <section>
                 <section>
-                  <div className='flex flex-col gap-4'>
+                  <div className='flex flex-col md:gap-4 gap-2'>
                     <p className='text-lg font-bold'>Category</p>
                     <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/shoecategory'>Shoes</Link>
                     <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/shirtcategory'>Shirts</Link>
@@ -49,7 +49,7 @@ export default function Footer() {
 
               <section>
                 <section>
-                  <div className='flex flex-col gap-4'>
+                  <div className='flex flex-col md:gap-4 gap-2'>
                     <p className='mb-6'></p>
                     <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>FAQs</Link>
                     <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>About Us</Link>

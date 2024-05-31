@@ -31,21 +31,21 @@ export default function BelowCartImg() {
             alt='Stylish lady with trendy wears' 
             width={250} 
             height={250} 
-            className='w-[6.74rem] sm:w-64' 
+            className='w-[33.3%] sm:w-64' 
           />
           <Image 
             src="/bci2.jpg" 
             alt='Man on black suit' 
             width={250} 
             height={250} 
-            className='w-[6.74rem] sm:w-64' 
+            className='w-[33.3%] sm:w-64' 
           />
           <Image 
             src="/bci3.jpg" 
             alt='Pair of black nike shoes' 
             width={250} 
             height={250} 
-            className='w-[6.74rem] sm:w-64' 
+            className='w-[33.3%] sm:w-64' 
           />
         </div>
       </div>
