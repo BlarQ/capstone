@@ -5,6 +5,7 @@ import { data } from "../components/data";
 import HomeProduct from '../components/HomeProduct';
 import CategoryProduct from '../components/CategoryProduct';
 
+
 const watchData = data.filter(datum => datum.type === 'Wristwatch').slice(0, 3)
 
 
@@ -37,7 +38,7 @@ export default function page() {
         <div className='my-4'>
             <h1 className='text-center font-bold text-3xl text-[#2e4053]'>Our Product Categories</h1>
 
-            <div className='flex justify-center items-center my-8 gap-4 font-semibold text-[gray]'>
+            <div className='hidden sm:flex justify-center items-center my-8 gap-4 font-semibold text-[gray]'>
                 <div>
 
                     <Link className='hover:text-[#2e4053] duration-300' href='/allproduct'>ALL</Link>
