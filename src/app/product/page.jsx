@@ -6,6 +6,7 @@ import HomeProduct from '../components/HomeProduct';
 import CategoryProduct from '../components/CategoryProduct';
 
 
+
 const watchData = data.filter(datum => datum.type === 'Wristwatch').slice(0, 3)
 
 

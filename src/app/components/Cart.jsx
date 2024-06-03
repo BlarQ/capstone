@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
 import { FiShoppingCart } from 'react-icons/fi'
-import { SidebarContext } from '../providers'
+import { SideBarContext, SidebarContext } from '../providers'
 
 export default function Cart() {
-  const {val} = useContext(SidebarContext)
+  const {val} = useContext(SideBarContext)
   return (
     <div className='flex justify-center items-center'>
         <FiShoppingCart className='text-3xl absolute'/>
