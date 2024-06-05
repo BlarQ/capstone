@@ -36,7 +36,7 @@ export default function CustomersReview() {
     <div className='mx-8 my-10'>
         <div className='flex flex-col sm:flex-row sm:justify-between sm:items-end'>
             <div>
-                <h2 className='sm:text-6xl text-3xl w-[60%] sm:w-full font-bold'>Real people, real results</h2>
+                <h2 className='sm:text-6xl text-3xl w-[60%] sm:w-full font-bold text-[#2e4053]'>Real people, real results</h2>
                 <p className='max-w-[39rem] my-2 font-bold text-[gray]'>We value your feedback and would love to hear your thoughts on your shopping experience. Please leave a review and help us improve our service. Your insights are important to us and to future customers. Thank you for shopping with us!</p>
             </div>
 

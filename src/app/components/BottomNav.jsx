@@ -45,7 +45,7 @@ export const BottomNav = () => {
                     TrendLuxe
                 </Link>
 
-                <ul className={hide ? 'absolute font-bold flex sm:flex-row right-5 text-white sm:text-black flex-col h-[55vh] mt-[29rem] sm:flex pt-5 gap-y-10 bg-[#a0a0a0e7] sm:bg-transparent sm:mt-0 sm:h-0 sm:left-48 sm:font-semibold sm:gap-x-5 w-60 pr-10 rounded-md items-end' : 'sm:relative hidden sm:flex items-center justify-start font-medium gap-5' }>
+                <ul className={hide ? 'absolute font-bold flex sm:flex-row right-5 text-white sm:text-black flex-col h-[55vh] mt-[29rem] sm:flex pt-5 gap-y-10 bg-[#a0a0a0e7] sm:bg-transparent sm:mt-0 sm:h-0 sm:left-48 sm:font-semibold sm:gap-x-5 w-60 pr-10 rounded-md items-end' : 'sm:relative hidden sm:flex items-center justify-start gap-5 font-bold' }>
                     <li>
                         <Link href='/'>Home</Link>
                     </li>
@@ -54,7 +54,7 @@ export const BottomNav = () => {
                     </li>
                     <li>
                         <Link className='group flex justify-center items-center' onMouseOver={showPage} href='/'>Pages
-                            <MdKeyboardArrowUp className='group-hover:rotate-180 duration-300'/>
+                            <MdKeyboardArrowUp className='group-hover:rotate-180 font-bold duration-300'/>
                         </Link>
                     </li>
                     <li>

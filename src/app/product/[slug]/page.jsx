@@ -18,7 +18,7 @@ export default function ProductPage({ params }) {
                     <Image src={`/${product.name.split(' ').join('-')}.png`} alt={product.name} width={500} height={500}/>
                 </div>
                 <div className='w-[40%] p-10'>
-                    <h1 className='text-5xl font-bold my-5'>{product.name}</h1>
+                    <h1 className='text-5xl font-bold my-5 text-[#2e4053]'>{product.name}</h1>
                     <p className='text-[gray] font-bold'>{product.description}</p>
                     <p className='font-bold text-3xl my-5 text-[gray]'><span>&#8358;</span>{product.amount}</p>
 
