@@ -54,7 +54,7 @@ export const BottomNav = () => {
                     </li>
                     <li>
                         <Link className='group flex justify-center items-center' onMouseOver={showPage} href='/'>Pages
-                            <MdKeyboardArrowUp className='group-hover:rotate-180 font-bold duration-300'/>
+                            <MdKeyboardArrowUp className='group-hover:rotate-180 text-xl duration-300'/>
                         </Link>
                     </li>
                     <li>
