@@ -8,12 +8,12 @@ const product = data.filter(datum => datum.type === 'Shoe')
 export default function page() {
     const shoeProduct = product.map(shoe =>(
         <section key={shoe.id}>
-            <div className='flex justify-center text-[#2e4053] items-center border-2 border-[#f7f7f7] hover:bg-[#2e4053] duration-300 hover:text-white hover:shadow-sm flex-col'>
+            <div className='flex justify-center text-[#2e4053] items-center border-2 group border-[#f7f7f7] hover:bg-[#2e4053] duration-300 hover:text-white hover:shadow-sm flex-col'>
                 <Link href={`/product/${shoe.name.split(' ').join('-')}`}>
                     <h2 className='text-3xl text-left my-4 font-bold'>{shoe.name}</h2>
                     <p className='text-xl text-left font-semibold'><span>&#8358;</span><span>{shoe.amount}</span></p>
                     <section>
-                        <Image className='mb-8 hover:scale-105 duration-300 hover:-translate-y-5' src={`/${shoe.name.split(' ').join('-')}.png`} alt={shoe.name} title={shoe.name}
+                        <Image className='mb-8 group-hover:scale-105 duration-300 hover:-translate-y-5' src={`/${shoe.name.split(' ').join('-')}.png`} alt={shoe.name} title={shoe.name}
                             width={300}
                             height={300} />
                     </section>

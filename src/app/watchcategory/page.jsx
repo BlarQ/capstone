@@ -8,12 +8,12 @@ const product = data.filter(datum => datum.type === 'Wristwatch')
 export default function page() {
     const watchProduct = product.map(watch =>(
         <section key={watch.id}>
-            <div className='flex justify-center text-[#2e4053] items-center border-2 border-[#f7f7f7] hover:bg-[#2e4053] duration-300 hover:text-white hover:shadow-sm flex-col'>
+            <div className='flex justify-center text-[#2e4053] items-center border-2 group border-[#f7f7f7] hover:bg-[#2e4053] duration-300 hover:text-white hover:shadow-sm flex-col'>
                 <Link href={`/product/${watch.name.split(' ').join('-')}`}>
                     <h2 className='text-3xl text-left my-4 font-bold'>{watch.name}</h2>
                     <p className='text-xl text-left font-semibold'><span>&#8358;</span><span>{watch.amount}</span></p>
                     <section>
-                        <Image className='mb-8 hover:scale-105 duration-300 hover:-translate-y-5' src={`/${watch.name.split(' ').join('-')}.png`} alt={watch.name} title={watch.name}
+                        <Image className='mb-8 group-hover:scale-105 duration-300 hover:-translate-y-5' src={`/${watch.name.split(' ').join('-')}.png`} alt={watch.name} title={watch.name}
                             width={300}
                             height={300} />
                     </section>

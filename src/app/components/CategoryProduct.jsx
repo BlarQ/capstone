@@ -10,12 +10,12 @@ const categoryData = data.filter(datum => datum.type =='Shirt').slice(0, 3)
 export default function CategoryProduct() {
     const categoryLog = categoryData.map(category =>(
         <section key={category.id}>
-            <div className='flex justify-center items-center border-2 text-[#2e4053] border-[#f7f7f7] hover:bg-[#2e4053] duration-300 hover:text-white hover:shadow-sm flex-col'>
+            <div className='flex justify-center items-center border-2 text-[#2e4053] group border-[#f7f7f7] hover:bg-[#2e4053] duration-300 hover:text-white hover:shadow-sm flex-col'>
                 <Link href={`/product/${category.name.split(' ').join('-')}`}>
                     <h2 className='text-3xl text-left my-4 font-bold'>{category.name}</h2>
                     <p className='text-xl text-left font-semibold'><span>&#8358;</span><span>{category.amount}</span></p>
                     <section>
-                        <Image className='mb-8 hover:scale-105 duration-300 hover:-translate-y-5' src={`/${category.name.split(' ').join('-')}.png`} alt={category.name} title={category.name}
+                        <Image className='mb-8 group-hover:scale-105 duration-300 hover:-translate-y-5' src={`/${category.name.split(' ').join('-')}.png`} alt={category.name} title={category.name}
                             width={300}
                             height={300} />
                     </section>
