@@ -4,7 +4,7 @@ import React, { createContext, useState } from 'react'
 const SideBarContext = createContext()
 
 const SidebarProvider = ({children}) => {
-    const [val, setVal] = useState(3)
+    const [val, setVal] = useState(5)
     const [inputVal, setInputVal] = useState(1);
 
   return (

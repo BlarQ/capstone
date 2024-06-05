@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { FiShoppingCart } from 'react-icons/fi'
-import { SideBarContext, SidebarContext } from '../providers'
+import { SideBarContext } from '../providers'
 
 export default function Cart() {
   const {val} = useContext(SideBarContext)

@@ -7,7 +7,7 @@ import { FaArrowRight } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer>
-        <h2 className={styles.fhead}>TrendLuxe</h2>
+        {/* <h2 className={styles.fhead}>TrendLuxe</h2> */}
         <div className='bg-[#2e4053] text-white md:p-10 p-5'>
             <div className='flex justify-center items-center md:my-10 my-5'>
               <form className='flex flex-col sm:flex-row gap-y-2 sm:gap-y-0 sm:justify-center sm:items-center rounded-full sm:bg-[#f7f7f7] md:w-[70%]'>

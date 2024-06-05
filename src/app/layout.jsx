@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         <SidebarProvider>
 
         <div>
-          <div className="fixed inset-x-0 z-[1] border-b-0 shadow-transparent bg-white">
+          <div className="fixed inset-x-0 z-[10] border-b-0 shadow-transparent bg-white">
             <TopNav />
             <BottomNav />
           </div>

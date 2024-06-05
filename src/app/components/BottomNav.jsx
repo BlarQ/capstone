@@ -1,15 +1,12 @@
 "use client"
 import Link from 'next/link'
 import React, { useContext, useEffect, useRef, useState } from 'react'
-import { MdKeyboardArrowDown } from "react-icons/md"
+import { MdKeyboardArrowUp } from "react-icons/md"
 import { RiCloseFill } from "react-icons/ri";
 import Cart from './Cart'
 import SearchBar from './SearchBar'
 import PageHover from './PageHover'
 import { GiHamburgerMenu } from "react-icons/gi";
-
-
-
 
 
 export const BottomNav = () => {
@@ -56,8 +53,8 @@ export const BottomNav = () => {
                         <Link href='/about'>About</Link>
                     </li>
                     <li>
-                        <Link className='flex justify-center items-center' onMouseOver={showPage} href='/'>Pages
-                            <MdKeyboardArrowDown />
+                        <Link className='group flex justify-center items-center' onMouseOver={showPage} href='/'>Pages
+                            <MdKeyboardArrowUp className='group-hover:rotate-180 duration-300'/>
                         </Link>
                     </li>
                     <li>

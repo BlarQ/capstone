@@ -33,7 +33,7 @@ export default function CustomersReview() {
         </div>
     ))
   return (
-    <div className='mx-8 mb-20'>
+    <div className='mx-8 my-10'>
         <div className='flex flex-col sm:flex-row sm:justify-between sm:items-end'>
             <div>
                 <h2 className='sm:text-6xl text-3xl w-[60%] sm:w-full font-bold'>Real people, real results</h2>
