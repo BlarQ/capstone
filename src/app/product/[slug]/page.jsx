@@ -1,11 +1,26 @@
-import React from 'react';
+'use client'
+import React, { useContext } from 'react';
 import { data } from '@/app/components/data';
 import Image from 'next/image';
 import CustomersReview from '@/app/components/CustomersReview';
 import Link from 'next/link';
+import { SideBarContext } from '@/app/providers';
+
+
 
 export default function ProductPage({ params }) {
+
+    const {cartItem, setCartItem, val, setVal, inputVal, setInputVal} = useContext(SideBarContext)
     const product = data.find(p => p.name.split(' ').join('-') === params.slug);
+
+    function handleValType(e){
+        setInputVal(Number(e.target.value))
+    }
+
+    function handleButtonIncrease(){
+        setVal(prev => prev + inputVal)
+        setCartItem([...cartItem, {id: product.id,title:product.name,value:inputVal,amount:product.amount*inputVal}])
+    }
 
     // To find related products based on the type of the current product
     const relatedProducts = data.filter(p => p.type === product.type && p.id !== product.id).slice(0, 5);
@@ -20,11 +35,11 @@ export default function ProductPage({ params }) {
                 <div className='w-[40%] p-10'>
                     <h1 className='text-5xl font-bold my-5 text-[#2e4053]'>{product.name}</h1>
                     <p className='text-[gray] font-bold'>{product.description}</p>
-                    <p className='font-bold text-3xl my-5 text-[gray]'><span>&#8358;</span>{product.amount}</p>
+                    <p className='font-bold text-3xl my-5 text-[gray]'><span>&#8358;</span>{product.amount.toLocaleString()}</p>
 
                     <div className='flex items-center justify-center gap-3'>
-                        <input className='outline-[#2e4053] border-2 px-3 rounded-full h-10 w-[30%] font-bold' type="number" name="num" id="num" defaultValue={1} max={10} min={1}/>
-                        <button className='w-[70%] text-white font-bold bg-[#2e4053] h-10 rounded-full shadow-md hover:scale-105 duration-300'>Shop now</button>
+                        <input className='outline-[#2e4053] border-2 px-3 rounded-full h-10 w-[30%] font-bold' type="number" name="num" id="num" onChange={(e)=>handleValType(e)} defaultValue={inputVal} max={10} min={1}/>
+                        <button onClick={handleButtonIncrease} className='w-[70%] text-white font-bold bg-[#2e4053] h-10 rounded-full shadow-md hover:scale-105 duration-300'>Shop now</button>
                     </div>
                 </div>
             </div>
@@ -49,6 +64,7 @@ export default function ProductPage({ params }) {
             )}
 
             <CustomersReview />
+
         </div>
     );
 }

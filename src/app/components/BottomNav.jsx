@@ -7,9 +7,12 @@ import Cart from './Cart'
 import SearchBar from './SearchBar'
 import PageHover from './PageHover'
 import { GiHamburgerMenu } from "react-icons/gi";
+import { SideBarContext } from '../providers';
+import CartPage from './CartPage';
 
 
 export const BottomNav = () => {
+    const {isOpen, setIsOpen} = useContext(SideBarContext)
     
     const [hide, setHide] = useState(false)
     const [page, setPage] = useState(false)
@@ -21,6 +24,11 @@ export const BottomNav = () => {
 
     function showNav(){
         setHide(!hide)
+    }
+
+    function handleCartOpen(){
+        setIsOpen(!isOpen)
+        alert('yes ')
     }
 
     // Click outside handler
@@ -46,7 +54,7 @@ export const BottomNav = () => {
                 </Link>
 
                 <ul className={hide ? 'absolute font-bold flex sm:flex-row right-5 text-white sm:text-black flex-col h-[55vh] mt-[29rem] sm:flex pt-5 gap-y-10 bg-[#a0a0a0e7] sm:bg-transparent sm:mt-0 sm:h-0 sm:left-48 sm:font-semibold sm:gap-x-5 w-60 pr-10 rounded-md items-end' : 'sm:relative hidden sm:flex items-center justify-start gap-5 font-bold' }>
-                    <li>
+                    <li >
                         <Link href='/'>Home</Link>
                     </li>
                     <li>
@@ -63,7 +71,7 @@ export const BottomNav = () => {
                     
                     <div className='flex items-center justify-center space-x-7 sm:hidden'>
 
-                        <Cart />
+                        <Cart className='cursor-pointer' />
                         <Link className='bg-[#34c759] text-white py-3 px-4 rounded-full font-semibold hover:scale-95 hover:transition duration-500' href='/'>Get in touch</Link>
                     </div>
                 </ul>
@@ -73,7 +81,7 @@ export const BottomNav = () => {
                 <SearchBar />
             </div>
             <div className='justify-center items-center space-x-7 hidden sm:flex'>
-                <Cart />
+                <Cart className='cursor-pointer' />
                 <Link className='bg-[#34c759] text-white py-3 px-4 rounded-full font-semibold hover:scale-95 hover:transition duration-500' href='/'>Get in touch</Link>
             </div>
 
@@ -88,6 +96,11 @@ export const BottomNav = () => {
         </nav>
             {page &&
                 <PageHover />
+            }
+
+            {isOpen &&
+                <CartPage />
+
             }
             
         </div>

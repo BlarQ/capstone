@@ -8,7 +8,7 @@ export const data = [
       "The cushioned midsole provides exceptional comfort, while the rubber outsole offers excellent traction.",
       "Whether you're hitting the streets or heading out for the night, the Air Force 1 is the perfect choice."
     ],
-    "amount": '120,000',
+    "amount":  120000 ,
     "region": ["North America", "Europe"]
   },
   {
@@ -20,7 +20,7 @@ export const data = [
       "The Boost midsole provides unparalleled cushioning and energy return, making it perfect for all-day wear.",
       "Whether you're a sneakerhead or just looking for a stylish pair of shoes, the Yeezy Boost 350 V2 is a must-have."
     ],
-    "amount": '220,000',
+    "amount":  220000 ,
     "region": ["North America", "Europe", "Asia"]
   },
   {
@@ -32,7 +32,7 @@ export const data = [
       "The RS cushioning system ensures comfort and support, while the mesh and synthetic upper provides breathability.",
       "Perfect for adding a touch of nostalgia to your casual outfits, the RS-X3 is both stylish and functional."
     ],
-    "amount": '110,000',
+    "amount":  110000 ,
     "region": ["North America", "Europe", "Asia"]
   },
   {
@@ -44,7 +44,7 @@ export const data = [
       "The lightweight EVA midsole offers cushioning, while the rubber outsole provides grip and durability.",
       "Ideal for casual wear, the 327 adds a fresh twist to any outfit."
     ],
-    "amount": '100,000',
+    "amount":  100000 ,
     "region": ["North America", "Europe"]
   },
   {
@@ -56,7 +56,7 @@ export const data = [
       "The padded collar and reinforced toe cap ensure comfort and protection, while the rubber waffle outsole offers excellent grip.",
       "Perfect for skating or everyday wear, the Sk8-Hi is a timeless classic."
     ],
-    "amount": '70,000',
+    "amount":  70000 ,
     "region": ["North America", "Europe", "Asia"]
   },
   {
@@ -68,7 +68,7 @@ export const data = [
       "The EVA midsole provides cushioning, while the high-abrasion rubber outsole offers durability and traction.",
       "Perfect for everyday wear, the Club C 85 combines comfort and timeless style."
     ],
-    "amount": '75,000',
+    "amount":  75000 ,
     "region": ["North America", "Europe", "Asia"]
   },
   {
@@ -80,7 +80,7 @@ export const data = [
       "The engineered mesh upper provides breathability and support, while the FlyteFoam midsole offers responsive cushioning.",
       "Perfect for marathon training or daily runs, the Gel-Nimbus 23 ensures comfort and performance."
     ],
-    "amount": '150,000',
+    "amount":  150000 ,
     "region": ["North America", "Europe", "Asia"]
   },
   {
@@ -92,7 +92,7 @@ export const data = [
       "The SensiFit upper provides a snug and secure fit, while the EnergyCell+ midsole delivers excellent cushioning and energy return.",
       "Perfect for trail running and hiking, the Speedcross 5 combines durability and performance."
     ],
-    "amount": '130,000',
+    "amount":  130000 ,
     "region": ["North America", "Europe"]
   },
   {
@@ -104,7 +104,7 @@ export const data = [
       "The anti-fatigue footbed provides comfort, while the lug outsole offers excellent traction.",
       "Perfect for outdoor adventures or urban wear, the Earthkeepers combine style and sustainability."
     ],
-    "amount": '180,000',
+    "amount":  180000 ,
     "region": ["North America", "Europe", "Asia"]
   },
   {
@@ -116,7 +116,7 @@ export const data = [
       "The AirWair sole provides cushioning and slip resistance, while the Goodyear welt construction ensures durability.",
       "Perfect for making a statement, the 1460 is a timeless classic that never goes out of style."
     ],
-    "amount": '150,000',
+    "amount":  150000 ,
     "region": ["North America", "Europe", "Asia"]
   },
   {
@@ -128,7 +128,7 @@ export const data = [
       "Crafted from Oystersteel and featuring a Cerachrom bezel, the Submariner is built to withstand the rigors of underwater exploration.",
       "With its precise movement and elegant aesthetics, the Submariner is a symbol of prestige and performance."
     ],
-    "amount": '2,500,000',
+    "amount":  2500000 ,
     "region": ["North America", "Europe", "Asia"]
   },
   {
@@ -140,7 +140,7 @@ export const data = [
       "Featuring a tachymetric scale, chronograph functions, and a hesalite crystal, the Speedmaster is both functional and iconic.",
       "Whether you're a space enthusiast or a watch collector, the Speedmaster is a timepiece that captures the essence of exploration."
     ],
-    "amount": '1,800,000',
+    "amount":  1800000 ,
     "region": ["North America", "Europe", "Asia"]
   },
   {
@@ -152,7 +152,7 @@ export const data = [
       "The Carrera features a robust stainless steel case, a sapphire crystal, and an automatic movement, making it perfect for both racing and everyday wear.",
       "With its sporty yet elegant look, the Carrera is a favorite among watch enthusiasts and athletes alike."
     ],
-    "amount": '1,500,000',
+    "amount":  1500000 ,
     "region": ["North America", "Europe"]
   },
   {
@@ -164,7 +164,7 @@ export const data = [
       "The Prospex features a rugged stainless steel case, a unidirectional rotating bezel, and LumiBrite hands and markers for excellent visibility underwater.",
       "Whether you're exploring the ocean depths or hiking in the mountains, the Prospex is a reliable companion."
     ],
-    "amount": '800,000',
+    "amount":  800000 ,
     "region": ["North America", "Europe", "Asia"]
   },
   {
@@ -176,7 +176,7 @@ export const data = [
       "With its always-on Retina display, you can easily view notifications, apps, and watch faces at a glance.",
       "Whether you're working out, managing your day, or staying in touch, the Apple Watch Series 8 is your ultimate digital companion."
     ],
-    "amount": '400,000',
+    "amount":  400000 ,
     "region": ["North America", "Europe", "Asia", "Australia"]
   },
   {
@@ -188,7 +188,7 @@ export const data = [
       "The G-Shock features a durable resin case, water resistance up to 200 meters, and a variety of digital functions including a stopwatch and countdown timer.",
       "Whether you're hiking, surfing, or just living an active lifestyle, the G-Shock is built to withstand it all."
     ],
-    "amount": '200,000',
+    "amount":  200000 ,
     "region": ["North America", "Europe", "Asia", "Africa"]
   },
   {
@@ -200,7 +200,7 @@ export const data = [
       "With its distinctive design and high-precision chronograph movement, the Navitimer is a favorite among pilots and watch enthusiasts alike.",
       "Whether you're flying high or navigating daily life, the Navitimer combines functionality with classic style."
     ],
-    "amount": '3,000,000',
+    "amount":  3000000 ,
     "region": ["North America", "Europe"]
   },
   {
@@ -212,7 +212,7 @@ export const data = [
       "Featuring a classic design with a stainless steel case, Roman numerals, and a Swiss automatic movement, the Le Locle is perfect for formal occasions.",
       "Whether you're attending a business meeting or a black-tie event, the Le Locle adds a touch of sophistication to any outfit."
     ],
-    "amount": '500,000',
+    "amount":  500000 ,
     "region": ["North America", "Europe", "Asia"]
   },
   {
@@ -224,7 +224,7 @@ export const data = [
       "The Gen 6 features a sleek stainless steel case, a touchscreen display, and compatibility with both Android and iOS devices.",
       "Whether you're tracking your fitness goals or staying connected on the go, the Fossil Gen 6 is a versatile and stylish choice."
     ],
-    "amount": '350,000',
+    "amount":  350000 ,
     "region": ["North America", "Europe", "Asia", "Australia"]
   },
   {
@@ -236,7 +236,7 @@ export const data = [
       "The Fenix 7 features a rugged design with a stainless steel or titanium bezel, a large display, and a variety of sports modes.",
       "Whether you're running, cycling, swimming, or exploring the great outdoors, the Fenix 7 is built to support your active lifestyle."
     ],
-    "amount": '1,200,000',
+    "amount":  1200000 ,
     "region": ["North America", "Europe", "Asia", "Africa"]
   },
   {
@@ -248,7 +248,7 @@ export const data = [
       "Featuring a tailored fit and a spread collar, this shirt provides both comfort and style.",
       "Ideal for business meetings, formal events, or a polished everyday look."
     ],
-    "amount": '25,000',
+    "amount":  25000 ,
     "region": ["North America", "Europe", "Asia"]
   },
   {
@@ -260,7 +260,7 @@ export const data = [
       "With its relaxed fit and button-down design, this shirt is perfect for weekends and casual outings.",
       "Pair it with jeans or chinos for a versatile, timeless look."
     ],
-    "amount": '15,000',
+    "amount":  15000 ,
     "region": ["North America", "Europe", "Asia"]
   },
   {
@@ -272,7 +272,7 @@ export const data = [
       "The classic plaid pattern and relaxed fit make it a versatile addition to your wardrobe.",
       "Ideal for layering over a t-shirt or under a jacket for a rugged, outdoorsy look."
     ],
-    "amount": '18,000',
+    "amount":  18000 ,
     "region": ["North America", "Europe"]
   },
   {
@@ -284,7 +284,7 @@ export const data = [
       "The button-down collar and subtle texture add a touch of elegance to any outfit.",
       "Perfect for office wear, formal occasions, or a refined casual look."
     ],
-    "amount": '20,000',
+    "amount":  20000 ,
     "region": ["North America", "Europe", "Asia"]
   },
   {
@@ -296,7 +296,7 @@ export const data = [
       "The relaxed fit and breathable fabric ensure maximum comfort, while the button-up design adds a touch of style.",
       "Perfect for beach outings, casual gatherings, or a laid-back summer look."
     ],
-    "amount": '12,000',
+    "amount":  12000 ,
     "region": ["North America", "Europe", "Asia", "Australia"]
   },
   {
@@ -308,7 +308,7 @@ export const data = [
       "The classic polo collar and striped pattern make it a versatile choice for any casual occasion.",
       "Pair it with shorts or jeans for a timeless, preppy look."
     ],
-    "amount": '10,000',
+    "amount":  10000 ,
     "region": ["North America", "Europe", "Asia", "Africa"]
   },
   {
@@ -320,7 +320,7 @@ export const data = [
       "The tailored fit and checkered pattern add a touch of sophistication to your office wear.",
       "Perfect for business meetings, presentations, or any formal occasion."
     ],
-    "amount": '22,000',
+    "amount":  22000 ,
     "region": ["North America", "Europe"]
   },
   {
@@ -332,7 +332,7 @@ export const data = [
       "The relaxed fit and casual style make it perfect for everyday wear.",
       "Ideal for pairing with jeans, shorts, or joggers for a laid-back, trendy look."
     ],
-    "amount": '8,000',
+    "amount":  8000 ,
     "region": ["North America", "Europe", "Asia", "Australia"]
   },
   {
@@ -344,7 +344,7 @@ export const data = [
       "The button-down design and versatile color make it easy to pair with your favorite pants or shorts.",
       "Whether you're heading to a casual outing or a weekend brunch, this shirt is a great choice."
     ],
-    "amount": '14,000',
+    "amount":  14000 ,
     "region": ["North America", "Europe", "Asia"]
   },
   {
@@ -356,7 +356,7 @@ export const data = [
       "Designed for special occasions, this shirt pairs perfectly with a tuxedo or formal suit.",
       "Ideal for weddings, black-tie events, or any formal gathering where you want to look your best."
     ],
-    "amount": '30,000',
+    "amount":  30000 ,
     "region": ["North America", "Europe", "Asia"]
   },
   {
@@ -368,7 +368,7 @@ export const data = [
       "Spacious enough to carry all your essentials, this tote is perfect for both work and casual outings.",
       "The timeless design and versatile color make it a must-have accessory for any wardrobe."
     ],
-    "amount": '50,000',
+    "amount":  50000 ,
     "region": ["North America", "Europe", "Asia"]
   },
   {
@@ -380,7 +380,7 @@ export const data = [
       "The adjustable strap and secure closure ensure comfort and convenience.",
       "Ideal for shopping trips, travel, or a night out."
     ],
-    "amount": '30,000',
+    "amount":  30000 ,
     "region": ["North America", "Europe", "Asia", "Australia"]
   },
   {
@@ -392,7 +392,7 @@ export const data = [
       "Perfect for formal events, weddings, or parties, this clutch can carry your essentials without compromising on style.",
       "The versatile design allows you to pair it with any outfit."
     ],
-    "amount": '20,000',
+    "amount":  20000 ,
     "region": ["North America", "Europe"]
   },
   {
@@ -404,7 +404,7 @@ export const data = [
       "The chic design and comfortable straps make it perfect for commuting, school, or casual outings.",
       "Available in a variety of colors to match your personal style."
     ],
-    "amount": '35,000',
+    "amount":  35000 ,
     "region": ["North America", "Europe", "Asia"]
   },
   {
@@ -416,7 +416,7 @@ export const data = [
       "Featuring multiple compartments, this satchel is perfect for organizing your belongings.",
       "Ideal for work, school, or casual outings."
     ],
-    "amount": '45,000',
+    "amount":  45000 ,
     "region": ["North America", "Europe", "Asia", "Africa"]
   },
   {
@@ -428,7 +428,7 @@ export const data = [
       "The relaxed design and sturdy handles make it perfect for shopping, beach trips, or everyday use.",
       "Available in a variety of fun prints and colors."
     ],
-    "amount": '15,000',
+    "amount":  15000 ,
     "region": ["North America", "Europe", "Asia", "Australia"]
   },
   {
@@ -440,7 +440,7 @@ export const data = [
       "Perfect for special occasions or adding a touch of glamour to your everyday look.",
       "Includes a dust bag for storage and protection."
     ],
-    "amount": '120,000',
+    "amount":  120000 ,
     "region": ["North America", "Europe", "Asia"]
   },
   {
@@ -452,7 +452,7 @@ export const data = [
       "The adjustable straps and multiple pockets ensure convenience and comfort.",
       "Perfect for the gym, travel, or outdoor activities."
     ],
-    "amount": '25,000',
+    "amount":  25000 ,
     "region": ["North America", "Europe", "Asia", "Africa"]
   },
   {
@@ -464,7 +464,7 @@ export const data = [
       "Perfect for formal events, parties, or weddings, this bag can hold your essentials while adding a glamorous touch to your outfit.",
       "Includes a detachable chain strap for versatile carrying options."
     ],
-    "amount": '28,000',
+    "amount":  28000 ,
     "region": ["North America", "Europe", "Asia"]
   },
   {
@@ -476,7 +476,7 @@ export const data = [
       "Perfect for hands-free convenience while shopping, traveling, or running errands.",
       "Available in a variety of colors and patterns to match your style."
     ],
-    "amount": '18,000',
+    "amount":  18000 ,
     "region": ["North America", "Europe", "Asia", "Australia"]
   },
   {
@@ -488,7 +488,7 @@ export const data = [
       "Featuring multiple compartments, it provides ample space for documents, a laptop, and other essentials.",
       "Perfect for business meetings, travel, and daily commutes."
     ],
-    "amount": '85,000',
+    "amount":  85000 ,
     "region": ["North America", "Europe", "Asia"]
   },
   {
@@ -500,7 +500,7 @@ export const data = [
       "The spacious interior and secure closures ensure your belongings are safe and accessible.",
       "Ideal for professionals on the go."
     ],
-    "amount": '70,000',
+    "amount":  70000 ,
     "region": ["North America", "Europe", "Asia", "Australia"]
   },
   {
@@ -512,7 +512,7 @@ export const data = [
       "Perfect for carrying your laptop and essential documents without the bulk.",
       "Ideal for business travelers and minimalists."
     ],
-    "amount": '65,000',
+    "amount":  65000 ,
     "region": ["North America", "Europe"]
   },
   {
@@ -524,7 +524,7 @@ export const data = [
       "Multiple compartments provide ample space for all your business essentials.",
       "Perfect for adding a touch of sophistication to your professional attire."
     ],
-    "amount": '90,000',
+    "amount":  90000 ,
     "region": ["North America", "Europe", "Asia", "Africa"]
   },
   {
@@ -536,7 +536,7 @@ export const data = [
       "Includes a padded laptop compartment, multiple pockets, and a comfortable shoulder strap.",
       "Ideal for professionals who value both style and functionality."
     ],
-    "amount": '75,000',
+    "amount":  75000 ,
     "region": ["North America", "Europe", "Asia"]
   },
   {
@@ -548,7 +548,7 @@ export const data = [
       "Features multiple card slots, a bill compartment, and a secure coin pocket.",
       "Perfect for the discerning gentleman."
     ],
-    "amount": '25,000',
+    "amount":  25000 ,
     "region": ["North America", "Europe", "Asia"]
   },
   {
@@ -560,7 +560,7 @@ export const data = [
       "Includes multiple card slots, a bill compartment, and an ID window.",
       "Ideal for everyday use and special occasions."
     ],
-    "amount": '20,000',
+    "amount":  20000 ,
     "region": ["North America", "Europe", "Asia", "Australia"]
   },
   {
@@ -572,7 +572,7 @@ export const data = [
       "Perfect for carrying your essential cards and a few bills without the bulk.",
       "Ideal for minimalists and those who prefer a streamlined look."
     ],
-    "amount": '15,000',
+    "amount":  15000 ,
     "region": ["North America", "Europe"]
   },
   {
@@ -584,7 +584,7 @@ export const data = [
       "Includes multiple card slots, a bill compartment, and a secure zip pocket.",
       "Perfect for frequent travelers and those concerned about security."
     ],
-    "amount": '22,000',
+    "amount":  22000 ,
     "region": ["North America", "Europe", "Asia", "Africa"]
   },
   {
@@ -596,7 +596,7 @@ export const data = [
       "Includes multiple card slots, a bill compartment, and a coin pocket.",
       "Perfect for adding a touch of sophistication to your daily routine."
     ],
-    "amount": '18,000',
+    "amount":  18000 ,
     "region": ["North America", "Europe", "Asia"]
   }
 ]
