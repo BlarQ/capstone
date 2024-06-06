@@ -4,6 +4,9 @@ import React from 'react'
 import { data } from "../components/data";
 import HomeProduct from '../components/HomeProduct';
 import CategoryProduct from '../components/CategoryProduct';
+import { Bags } from '../components/Bags';
+import { FaArrowRight } from "react-icons/fa";
+
 
 
 
@@ -61,7 +64,11 @@ export default function page() {
             <div className='flex items-center justify-between mx-10'>
                 <p className='text-2xl font-bold text-[#2e4053]'>Wristwatch</p>
 
-                <Link className='font-bold text-[rgb(46,64,83)]' href='/watchcategory'>See more</Link>
+                <div className='flex justify-center items-center gap-x-1 group cursor-pointer'>
+                    <Link className='font-bold text-[rgb(46,64,83)]' href='/watchcategory'>See more</Link>
+
+                    <FaArrowRight className='group-hover:pl-1 duration-300' />
+                </div>
             </div>
             <hr className='mx-8'/>
             <div className='grid sm:grid-cols-3 grid-cols-1 gap-4 mx-8 mt-10'>
@@ -74,7 +81,11 @@ export default function page() {
             <div className='flex items-center justify-between mx-10'>
                 <p className='text-2xl font-bold text-[#2e4053]'>Footwears</p>
 
-                <Link className='font-bold text-[#2e4053]' href='/shoecategory'>See more</Link>
+                <div className='flex justify-center items-center gap-x-1 group cursor-pointer'>
+                    <Link className='font-bold text-[rgb(46,64,83)]' href='/shoecategory'>See more</Link>
+
+                    <FaArrowRight className='group-hover:pl-1 duration-300' />
+                </div>            
             </div>
             <hr className='mx-8'/>
             <HomeProduct />
@@ -84,10 +95,28 @@ export default function page() {
             <div className='flex items-center justify-between mx-10'>
                 <p className='text-2xl font-bold text-[#2e4053]'>Shirts</p>
 
-                <Link className='font-bold text-[#2e4053]' href='/shirtcategory'>See more</Link>
+                <div className='flex justify-center items-center gap-x-1 group cursor-pointer'>
+                    <Link className='font-bold text-[rgb(46,64,83)]' href='/shirtcategory'>See more</Link>
+
+                    <FaArrowRight className='group-hover:pl-1 duration-300' />
+                </div>            
             </div>
             <hr className='mx-8'/>
             <CategoryProduct />
+        </div>
+
+        <div>
+            <div className='flex items-center justify-between mx-10'>
+                <p className='text-2xl font-bold text-[#2e4053]'>Bags</p>
+
+                <div className='flex justify-center items-center gap-x-1 group cursor-pointer'>
+                    <Link className='font-bold text-[rgb(46,64,83)]' href='/bagscategory'>See more</Link>
+
+                    <FaArrowRight className='group-hover:pl-1 duration-300' />
+                </div>            
+            </div>
+            <hr className='mx-8'/>
+            <Bags />        
         </div>
     </div>
   )

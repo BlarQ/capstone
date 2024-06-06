@@ -13,7 +13,7 @@ export const HomeMarquee = () => {
   return (
     <div className='bg-[#ffffff] relative z-[1]'>
         <Marquee speed={30} pauseOnHover='true'>
-            <div className='my-4 flex justify-center items-center space-x-14'>
+            <div className='my-4 flex justify-center items-center gap-x-10'>
                 <div className='flex items-center justify-center space-x-2 font-bold'>
                     <LiaShoePrintsSolid className='text-3xl text-[#34c759]'/>
                     <p className='text-[#2e4053]'>Trendy Footy</p>
