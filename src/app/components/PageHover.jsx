@@ -3,8 +3,8 @@ import React from 'react'
 
 export default function PageHover() {
   return (
-    <div>
-        <section className='absolute shadow-md top-24 left-20  px-8 bg-[#2e4053] py-8 w-[50%] text-white grid sm:grid-cols-4 grid-rows-1 sm:gap-32 gap-10'>
+    <div className='h-screen w-full backdrop-blur-[2px] absolute'>
+        <section className='relative shadow-lg top-0 left-20 px-8 bg-[whitesmoke] py-8 w-[50%] text-[#2e5043] grid sm:grid-cols-4 grid-rows-1 sm:gap-32 gap-10 rounded-md'>
               <section>
                 <section>
                   <div className='flex flex-col gap-4'>
