@@ -12,29 +12,29 @@ import { IoMdCard } from "react-icons/io";
 export const HomeMarquee = () => {
   return (
     <div className='bg-[#ffffff] relative z-[1]'>
-        <Marquee speed={30} pauseOnHover='true'>
+        <Marquee speed={30} pauseOnHover='true' autoFill='true'>
             <div className='my-4 flex justify-center items-center gap-x-10'>
-                <div className='flex items-center justify-center space-x-2 font-bold'>
+                <div className='flex items-center justify-center font-bold'>
                     <LiaShoePrintsSolid className='text-3xl text-[#34c759]'/>
                     <p className='text-[#2e4053]'>Trendy Footy</p>
                 </div>
-                <div className='flex items-center justify-center space-x-2 font-bold'>
+                <div className='flex items-center justify-center font-bold'>
                     <IoMdCard className='text-3xl text-[#34c759]'/>
                     <p className='text-[#2e4053]'>100% Secured Payment</p>
                 </div>
-                <div className='flex items-center justify-center space-x-2 font-bold'>
+                <div className='flex items-center justify-center font-bold'>
                     <RiShirtLine className='text-3xl text-[#34c759]'/>
                     <p className='text-[#2e4053]'>Top Classic Styles</p>
                 </div>
-                <div className='flex items-center justify-center space-x-2 font-bold'>
+                <div className='flex items-center justify-center font-bold'>
                     <SlHandbag className='text-3xl text-[#34c759]'/>
                     <p className='text-[#2e4053]'>100% Sleek Designs</p>
                 </div>
-                <div className='flex items-center justify-center space-x-2 font-bold'>
+                <div className='flex items-center justify-center font-bold'>
                     <MdOutlineVerifiedUser className='text-3xl text-[#34c759]'/>
                     <p className='text-[#2e4053]'>100% Safe Service</p>
                 </div>
-                <div className='flex items-center justify-center space-x-2 font-bold'>
+                <div className='flex items-center justify-center font-bold mr-10'>
                     <IoWatchOutline className='text-3xl text-[#34c759]'/>
                     <p className='text-[#2e4053]'>Stylish WristWatch</p>
                 </div>
