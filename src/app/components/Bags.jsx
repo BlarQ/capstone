@@ -12,7 +12,7 @@ export const Bags = () => {
             <div className='flex justify-center items-center border-2 text-[#2e4053] group border-[#f7f7f7] hover:bg-[#2e4053] duration-300 hover:text-white hover:shadow-sm flex-col'>
                 <Link href={`/product/${b.name.split(' ').join('-')}`}>
                     <h2 className='text-3xl text-left my-4 font-bold'>{b.name}</h2>
-                    <p className='text-xl text-left font-semibold'><span>&#8358;</span><span>{b.amount}</span></p>
+                    <p className='text-xl text-left font-semibold'><span>&#8358;</span><span>{b.amount.toLocaleString()}</span></p>
                     <section>
                         <Image className='mb-8 group-hover:scale-105 duration-300 hover:-translate-y-5' src={`/${b.name.split(' ').join('-')}.png`} alt={b.name} title={b.name}
                             width={300}
