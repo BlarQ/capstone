@@ -9,15 +9,7 @@ import { SideBarContext } from '../providers';
 const productData = data.filter(datum => datum.type =='Shoe').slice(0, 3)
 
 export default function HomeProduct() {
-    const {cartItem, setCartItem, val, setVal, inputVal, setInputVal} = useContext(SideBarContext)
-
-    function handleButtonIncrease(){
-        setVal(prev => prev + inputVal)
-        setCartItem([...cartItem, {id: product.id,title:product.name,value:inputVal,amount:product.amount*inputVal}])
-    }
-
-
-    const productLog = productData.map(product =>(
+        const productLog = productData.map(product =>(
         <section key={product.id}>
             <div className='flex justify-center items-center border-2 text-[#2e4053] group border-[#f7f7f7] hover:bg-[#2e4053] duration-300 hover:text-white hover:shadow-sm flex-col'>
                 <Link href={`/product/${product.name.split(' ').join('-')}`}>
@@ -30,7 +22,7 @@ export default function HomeProduct() {
                     </section>
                 </Link>
 
-                <Link className='relative shadow-md -mt-16 py-4 flex items-center justify-center space-x-1 px-6 rounded-full bg-[#f7f7f7] font-bold text-[#2e4053] hover:text-white hover:bg-[#34c759] hover:scale-95 duration-300' href='/' onClick={handleButtonIncrease}>
+                <Link className='relative shadow-md -mt-16 py-4 flex items-center justify-center space-x-1 px-6 rounded-full bg-[#f7f7f7] font-bold text-[#2e4053] hover:text-white hover:bg-[#34c759] hover:scale-95 duration-300' href='/'>
                     <p>Add to cart</p><FaPlus />
                 </Link>
 

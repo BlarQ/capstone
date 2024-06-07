@@ -8,7 +8,7 @@ export default function CartPage() {
     const {isOpen, setIsOpen} = useContext(SideBarContext)
   return (
     <div className='h-screen justify-center flex  absolute w-full backdrop-blur-sm top-20'>
-        <div className='flex flex-col gap-y-5 items-start absolute shadow-sm rounded-md  w-[45%] h-[400px] bg-[#f7f7f7] text-2xl font-bold text-[#2e4053] px-10 py-5'>
+        <div className='flex flex-col gap-y-5 items-start absolute shadow-sm rounded-md  w-[45%] min-h-[50%] max-h-[70%] bg-[#f7f7f7] text-2xl font-bold text-[#2e4053] px-10 py-5'>
            <div className='flex justify-between w-full items-center'>
 
             <h1>Your Cart</h1>
