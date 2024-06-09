@@ -6,8 +6,12 @@ import HomeProduct from '../components/HomeProduct';
 import CategoryProduct from '../components/CategoryProduct';
 import { Bags } from '../components/Bags';
 import { FaArrowRight } from "react-icons/fa";
+import ProductPageBanner from '../components/ProductPageBanner';
 
-
+export const metadata = {
+    title: "Our Products | TrenLuxe",
+    description: "Amaizing, Trendy and Luxurious Fashion Items",
+};
 
 
 const watchData = data.filter(datum => datum.type === 'Wristwatch').slice(0, 3)
@@ -39,6 +43,7 @@ export default function page() {
     ))
   return (
     <div>
+        <ProductPageBanner />
         <div className='my-4'>
             <h1 className='text-center font-bold text-3xl text-[#2e4053]'>Our Product Categories</h1>
 
