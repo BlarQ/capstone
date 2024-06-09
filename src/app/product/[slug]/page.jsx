@@ -7,7 +7,6 @@ import Link from 'next/link';
 import { SideBarContext } from '@/app/providers';
 
 
-
 export default function ProductPage({ params }) {
 
     const {cartItem, setCartItem, val, setVal, inputVal, setInputVal} = useContext(SideBarContext)
@@ -30,7 +29,7 @@ export default function ProductPage({ params }) {
         <div className='mb-10'>
             <div className='flex items-center justify-center px-8 py-10'>
                 <div className='w-[60%] bg-slate-200 rounded-xl flex justify-center items-center py-10'>
-                    <Image src={`/${product.name.split(' ').join('-')}.png`} alt={product.name} width={500} height={500}/>
+                    <Image src={`/${product.name.split(' ').join('-')}.png`} alt={product.name} width={400} height={400}/>
                 </div>
                 <div className='w-[40%] p-10'>
                     <h1 className='text-5xl font-bold my-5 text-[#2e4053]'>{product.name}</h1>

@@ -26,7 +26,7 @@ export default function Footer() {
 
               <section>
                 <section>
-                  <div className='flex flex-col md:gap-4 gap-2'>
+                  <div className='flex flex-col md:gap-4 gap-2 items-center sm:items-start'>
                     <p className='text-xl font-bold'>Pages</p>
                     <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Home</Link>
                     <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/about'>About</Link>
@@ -39,7 +39,7 @@ export default function Footer() {
 
               <section>
                 <section>
-                  <div className='flex flex-col md:gap-4 gap-2'>
+                  <div className='flex flex-col md:gap-4 gap-2 items-center sm:items-start'>
                     <p className='text-xl font-bold'>Category</p>
                     <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/shoecategory'>Shoes</Link>
                     <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/shirtcategory'>Shirts</Link>
@@ -53,8 +53,8 @@ export default function Footer() {
 
               <section className='grid-flow-row'>
                 <section>
-                  <div className='flex flex-col md:gap-4 gap-2'>
-                    <p className='mb-6'></p>
+                  <div className='flex flex-col md:gap-4 gap-2 items-center sm:items-start'>
+                    <p className='sm:mb-6'></p>
                     <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>FAQs</Link>
                     <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>About Us</Link>
                     <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Vendors</Link>

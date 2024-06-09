@@ -44,8 +44,8 @@ export default function page() {
   return (
     <div>
         <ProductPageBanner />
-        <div className='my-4'>
-            <h1 className='text-center font-bold text-3xl text-[#2e4053]'>Our Product Categories</h1>
+        <div className='my-4 px-4 md:px-8'>
+            <h1 className='text-center font-bold text-3xl my-4 md:text-6xl text-[#2e4053]'>Our Product Categories</h1>
 
             <div className='hidden sm:flex justify-center items-center my-8 gap-4 font-semibold text-[gray]'>
                 <div>
@@ -66,7 +66,7 @@ export default function page() {
                 </div>
             </div>
 
-            <div className='flex items-center justify-between mx-10'>
+            <div className='flex items-center justify-between'>
                 <p className='text-2xl font-bold text-[#2e4053]'>Wristwatch</p>
 
                 <div className='flex justify-center items-center gap-x-1 group cursor-pointer'>
@@ -75,15 +75,15 @@ export default function page() {
                     <FaArrowRight className='group-hover:pl-1 duration-300' />
                 </div>
             </div>
-            <hr className='mx-8'/>
-            <div className='grid sm:grid-cols-3 grid-cols-1 gap-4 mx-8 mt-10'>
+            <hr className=''/>
+            <div className='grid sm:grid-cols-3 grid-cols-1 gap-4 mt-10'>
 
                 {categoryLog}
             </div>
         </div>
 
         <div className='py-4'>
-            <div className='flex items-center justify-between mx-10'>
+            <div className='flex items-center justify-between mx-4 md:mx-8'>
                 <p className='text-2xl font-bold text-[#2e4053]'>Footwears</p>
 
                 <div className='flex justify-center items-center gap-x-1 group cursor-pointer'>
@@ -92,12 +92,12 @@ export default function page() {
                     <FaArrowRight className='group-hover:pl-1 duration-300' />
                 </div>            
             </div>
-            <hr className='mx-8'/>
+            <hr className='mx-4 md:mx-8'/>
             <HomeProduct />
         </div>
 
         <div>
-            <div className='flex items-center justify-between mx-10'>
+            <div className='flex items-center justify-between mx-4 md:mx-8'>
                 <p className='text-2xl font-bold text-[#2e4053]'>Shirts</p>
 
                 <div className='flex justify-center items-center gap-x-1 group cursor-pointer'>
@@ -106,12 +106,12 @@ export default function page() {
                     <FaArrowRight className='group-hover:pl-1 duration-300' />
                 </div>            
             </div>
-            <hr className='mx-8'/>
+            <hr className='mx-4 md:mx-8'/>
             <CategoryProduct />
         </div>
 
         <div>
-            <div className='flex items-center justify-between mx-10'>
+            <div className='flex items-center justify-between mx-4 md:mx-8'>
                 <p className='text-2xl font-bold text-[#2e4053]'>Bags</p>
 
                 <div className='flex justify-center items-center gap-x-1 group cursor-pointer'>
@@ -120,7 +120,7 @@ export default function page() {
                     <FaArrowRight className='group-hover:pl-1 duration-300' />
                 </div>            
             </div>
-            <hr className='mx-8'/>
+            <hr className='mx-4 md:mx-8'/>
             <Bags />        
         </div>
     </div>
