@@ -49,11 +49,11 @@ export const BottomNav = () => {
         <div className='relative'>
         <nav className='flex justify-between items-center px-4 md:px-10 h-24 text-[#2e4053]'>
             <div className='flex items-center justify-start gap-16'>
-                <Link className='text-xl font-semibold' href='/'>
+                <Link className='text-xl font-bold' href='/'>
                     TrendLuxe
                 </Link>
 
-                <ul className={hide ? 'absolute font-bold flex sm:flex-row right-5 text-white sm:text-black flex-col h-[55vh] mt-[29rem] sm:flex pt-5 gap-y-10 bg-[#a0a0a0e7] sm:bg-transparent sm:mt-0 sm:h-0 sm:left-48 sm:font-semibold sm:gap-x-5 w-60 pr-10 rounded-md items-end' : 'sm:relative hidden sm:flex items-center justify-start gap-5 font-bold' }>
+                <ul className={hide ? 'absolute font-semibold flex sm:flex-row right-5 text-white sm:text-black flex-col h-[55vh] mt-[29rem] sm:flex pt-5 gap-y-10 bg-[#a0a0a0e7] sm:bg-transparent sm:mt-0 sm:h-0 sm:left-48 sm:font-semibold sm:gap-x-5 w-60 pr-10 rounded-md items-end' : 'sm:relative hidden sm:flex items-center justify-start gap-5 font-semibold' }>
                     <li >
                         <Link href='/'>Home</Link>
                     </li>
