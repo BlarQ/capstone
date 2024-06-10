@@ -60,9 +60,9 @@ export const BottomNav = () => {
                     <li>
                         <Link href='/about'>About</Link>
                     </li>
-                    <li onMouseOver={showPage}>
-                        <Link className='group flex justify-center items-center' onMouseOver={showPage} href='/'>Pages
-                            <MdKeyboardArrowUp className='group-hover:rotate-180 text-xl duration-300' onMouseOver={showPage}/>
+                    <li>
+                        <Link className='group flex justify-center items-center' onMouseOverCapture={showPage} href='/'>Pages
+                            <MdKeyboardArrowUp className='group-hover:rotate-180 text-xl duration-300'/>
                         </Link>
                     </li>
                     <li>
