@@ -53,8 +53,8 @@ export default function ProductPage({ params }) {
                                 <Link href={`/product/${relatedProduct.name.split(' ').join('-')}`}>
 
                                     <h3 className="text-lg font-bold mb-2 text-[#2e4053]">{relatedProduct.name}</h3>
-                                    <p className="font-bold mt-2 text-[#2e4053]">&#8358;{relatedProduct.amount}</p>
-                                    <Image className='' src={`/${relatedProduct.name.split(' ').join('-')}.png`} alt={relatedProduct.name} width={200} height={200}/>
+                                    <p className="font-bold mt-2 text-[#2e4053]">&#8358;{relatedProduct.amount.toLocaleString()}</p>
+                                    <Image src={`/${relatedProduct.name.split(' ').join('-')}.png`} alt={relatedProduct.name} width={200} height={200}/>
                                 </Link>
                             </div>
                         ))}

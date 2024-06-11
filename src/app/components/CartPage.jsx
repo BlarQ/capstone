@@ -22,27 +22,28 @@ export default function CartPage() {
                 <Link href='/' className='text-base font-semibold py-2 px-3 bg-[#34c759] rounded-full text-[#f7f7f7] hover:scale-95 duration-300'>Shop Now</Link>
             </div> :
 
-        <table className='capitalize text-xl w-[100%] m-auto text-left text-[#2e4053]'>
-            <thead>
+        <table className='capitalize text-xl w-[100%] h-[50vh] m-auto text-[#2e4053] text-center'>
+            <thead className=''>
                 <tr>
-                    <th>product</th>
-                    <th>quantity</th>
-                    <th>amount</th>
+                    <th className='text-left px-6'>Product</th>
+                    <th>Quantity</th>
+                    <th>Amount</th>
                 </tr>
             </thead>
             <tbody>
 
             {cartItem.map(item => (
                 <tr key={item.id}>
-                    <td className='pr-5'>{item.title}</td>
-                    <td className='pr-5'>{item.value}</td>
+                    <td className='text-left px-6'>{item.title}</td>
+                    <td>{item.value}</td>
                     <td>{item.amount.toLocaleString()}</td>
                 </tr>
             ))}
+            
             </tbody>
             <tfoot>
-                <tr>
-                    <td>total</td>
+                <tr className='font-bold bg-[#34c759] rounded-md text-[whitesmoke]'>
+                    <td className='text-left px-6'>total</td>
                     <td>{[...cartItem.map(item => item.value)].reduce((a,b)=>a+b,0)}</td>
                     <td>{[...cartItem.map(item => item.amount)].reduce((a,b)=>a+b,0).toLocaleString()}</td>
                     
