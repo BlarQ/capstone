@@ -17,8 +17,11 @@ const SidebarProvider = ({children}) => {
 
     useEffect(() => {
       localStorage.setItem("Item num", val)
+    }, [val])
+
+    useEffect(() => {
       localStorage.setItem("cartItem", JSON.stringify(cartItem))
-    })
+    }, [cartItem])
 
   return (
     <SideBarContext.Provider value={{cartItem, setCartItem, isOpen, setIsOpen, val, setVal, inputVal, setInputVal}}>
