@@ -42,10 +42,10 @@ const SidebarProvider = ({ children }) => {
     }
   }, [cartItem, hasMounted]);
 
-  if (!hasMounted) {
-    // Render null or a loading indicator to prevent hydration mismatch
-    return null;
-  }
+  // if (!hasMounted) {
+  //   // Render null or a loading indicator to prevent hydration mismatch
+  //   return null;
+  // }
 
   return (
     <SideBarContext.Provider value={{ cartItem, setCartItem, isOpen, setIsOpen, val, setVal, inputVal, setInputVal }}>
