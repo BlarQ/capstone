@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { IoClose } from "react-icons/io5";
 import { SideBarContext } from '../providers';
 import Link from 'next/link';
+import { AiTwotoneDelete } from "react-icons/ai";
 
 
 export default function CartPage() {
@@ -37,6 +38,7 @@ export default function CartPage() {
                     <td className='text-left px-6'>{item.title}</td>
                     <td>{item.value}</td>
                     <td>{item.amount.toLocaleString()}</td>
+                    <td className='text-base font-bold text-black cursor-pointer'><AiTwotoneDelete /></td>
                 </tr>
             ))}
             
@@ -46,7 +48,7 @@ export default function CartPage() {
                     <td className='text-left px-6'>total</td>
                     <td>{[...cartItem.map(item => item.value)].reduce((a,b)=>a+b,0)}</td>
                     <td>{[...cartItem.map(item => item.amount)].reduce((a,b)=>a+b,0).toLocaleString()}</td>
-                    
+                    <td></td>
                 </tr>
             </tfoot>
         </table>
