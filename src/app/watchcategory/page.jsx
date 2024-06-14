@@ -10,8 +10,8 @@ export default function page() {
         <section key={watch.id}>
             <div className='flex justify-center text-[#2e4053] items-center border-2 group border-[#f7f7f7] hover:bg-[#2e4053] duration-300 hover:text-white hover:shadow-sm flex-col'>
                 <Link href={`/product/${watch.name.split(' ').join('-')}`}>
-                    <h2 className='text-3xl text-left my-4 font-bold'>{watch.name}</h2>
-                    <p className='text-xl text-left font-semibold'><span>&#8358;</span><span>{watch.amount.toLocaleString()}</span></p>
+                    <h2 className='ml-1 sm:ml-0 sm:text-3xl text-left my-4 font-bold'>{watch.name}</h2>
+                    <p className='ml-1 sm:ml-0 sm:text-xl text-left font-semibold'><span>&#8358;</span><span>{watch.amount.toLocaleString()}</span></p>
                     <section>
                         <Image className='mb-8 group-hover:scale-105 duration-300 hover:-translate-y-5' src={`/${watch.name.split(' ').join('-')}.png`} alt={watch.name} title={watch.name}
                             width={300}
@@ -34,7 +34,7 @@ export default function page() {
         <h1 className='text-4xl uppercase font-bold text-center my-5 font-serif text-[#2e4053]'>Wriswatch</h1>
 
 
-        <div className='mx-8 grid gap-4 sm:grid-cols-3 sm:grid-rows-3'>
+        <div className='mx-4 sm:mx-8 grid gap-2 sm:gap-4 grid-cols-2 sm:grid-cols-3 sm:grid-rows-3'>
 
         {watchProduct}
         </div>

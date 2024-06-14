@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function PageHover() {
   return (
-    <div className='h-screen w-full backdrop-blur-[2px] absolute'>
+    <div className='sm:h-screen sm:w-full sm:backdrop-blur-[2px] absolute'>
         <section className='relative shadow-lg top-0 left-[23%] px-8 bg-[whitesmoke] py-8 w-[40%] text-[#2e5043] grid sm:grid-cols-4 grid-rows-1 sm:gap-32 gap-10 rounded-md'>
               <section>
                 <section>
