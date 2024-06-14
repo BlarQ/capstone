@@ -1,14 +1,42 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useContext } from 'react'
 import { FaPlus } from 'react-icons/fa6'
 import { data } from './data'
+import { SideBarContext } from '../providers'
 
-const categoryData = data.filter(datum => datum.type =='Shirt').slice(0, 3)
-
+const categoryData = data.filter(datum => datum.type == 'Shirt').slice(0, 3)
 
 export default function CategoryProduct() {
-    const categoryLog = categoryData.map(category =>(
+    const { cartItem, setCartItem, val, setVal } = useContext(SideBarContext);
+
+    function handleButtonIncrease(product) {
+        setVal(prev => prev + 1); // Increment val by 1
+
+        let newCartItems;
+        const itemIndex = cartItem.findIndex(item => item.title === product.name);
+        if (itemIndex !== -1) {
+            newCartItems = cartItem.map((item, index) =>
+                index === itemIndex ? {
+                    ...item,
+                    value: item.value + 1,
+                    amount: item.amount + product.amount
+                } : item
+            );
+        } else {
+            newCartItems = [...cartItem, {
+                id: product.id,
+                title: product.name,
+                value: 1,
+                amount: product.amount
+            }];
+        }
+
+        setCartItem(newCartItems);
+    }
+
+    const categoryLog = categoryData.map(category => (
         <section key={category.id}>
             <div className='flex justify-center items-center border-2 text-[#2e4053] group border-[#f7f7f7] hover:bg-[#2e4053] duration-300 hover:text-white hover:shadow-sm flex-col'>
                 <Link href={`/product/${category.name.split(' ').join('-')}`}>
@@ -21,21 +49,22 @@ export default function CategoryProduct() {
                     </section>
                 </Link>
 
-                <Link className='relative shadow-md -mt-16 py-4 flex items-center justify-center space-x-1 px-6 rounded-full bg-[#f7f7f7] font-bold text-[#2e4053] hover:text-white hover:bg-[#34c759] hover:scale-95 duration-300' href='/'>
+                <button className='relative shadow-md -mt-16 py-4 flex items-center justify-center space-x-1 px-6 rounded-full bg-[#f7f7f7] font-bold text-[#2e4053] hover:text-white hover:bg-[#34c759] hover:scale-95 duration-300' onClick={() => handleButtonIncrease(category)}>
                     <p>Add to cart</p><FaPlus />
-                </Link>
+                </button>
 
                 <Link className='flex items-center justify-center mt-4 mb-10 hover:text-[#34c759] duration-300' href={`/product/${category.name.split(' ').join('-')}`}>
                     Learn more
                 </Link>
             </div>
         </section>
-    )) 
-  return (
-    <section>
-        <div className='grid sm:grid-cols-3 grid-cols-1 gap-4 mx-4 md:mx-8 my-10'>
-            {categoryLog}
-        </div>
-    </section>
-  )
+    ))
+
+    return (
+        <section>
+            <div className='grid sm:grid-cols-3 grid-cols-1 gap-4 mx-4 md:mx-8 my-10'>
+                {categoryLog}
+            </div>
+        </section>
+    )
 }
