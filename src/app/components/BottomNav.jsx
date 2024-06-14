@@ -89,7 +89,7 @@ export const BottomNav = () => {
             <div className='sm:hidden cursor-pointer'>
                 <ul onClick={showNav}>
                     <GiHamburgerMenu className={hide ? "hidden" : "block"}/>
-                    <RiCloseFill className={`${!hide ? "hidden" : "block"} font-bold text-xl`}/>
+                    <RiCloseFill className={`${!hide ? "hidden" : "block"} font-bold text-base`}/>
 
                 </ul>
             </div>

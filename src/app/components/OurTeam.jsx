@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function OurTeam() {
   return (
-    <div className='mx-8'>
+    <div className='mx-5 sm:mx-8'>
         <div className='flex flex-col items-center justify-center'>
             <h2 className='text-2xl sm:text-6xl font-bold'>Our wonderful team</h2>
             <p className='font-bold md:mx-10 text-sm md:text-base text-center my-6 text-[gray] lg:mx-[20%]'>Our C.E.O. drives innovation and excellence. Our Product Designer crafts unique, stylish items. Our Marketer connects our passion for fashion with our customers. Together, we create exceptional shopping experiences.</p>
@@ -17,8 +17,8 @@ export default function OurTeam() {
                 </div>
 
                 <div className='md:ml-2'>
-                    <p className='text-xl mt-2 font-bold text-[gray]'>C.E.O. & Founder</p>
-                    <h2 className='text-4xl md:my-4 my-1 font-bold'>Alex Carter</h2>
+                    <p className='text-xl mt-2 font-bold text-[gray]'>FrontEnd Developer</p>
+                    <h2 className='text-4xl md:my-4 my-1 font-bold'>Adedamola O.</h2>
                     <p className='font-bold text-[gray]'>Leads with a vision for innovation and excellence, guiding our brand to new heights.</p>
                 </div>
             </div>
@@ -29,8 +29,8 @@ export default function OurTeam() {
                 </div>
 
                 <div className='md:ml-2'>
-                    <p className='text-xl mt-2 font-bold text-[gray]'>Product Designer</p>
-                    <h2 className='text-4xl md:my-4 my-1 font-bold'>Liam Bennett</h2>
+                    <p className='text-xl mt-2 font-bold text-[gray]'>Project Supervisor</p>
+                    <h2 className='text-4xl md:my-4 my-1 font-bold'>Franc Emepuo</h2>
                     <p className='font-bold text-[gray]'>He excels in creating intuitive, user-friendly designs that enhance user experience. His collaborative approach and technical expertise make him an invaluable asset to our team.</p>
                 </div>
             </div>
@@ -41,8 +41,8 @@ export default function OurTeam() {
                 </div>
 
                 <div className='md:ml-2'>
-                    <p className='text-xl mt-2 font-bold text-[gray]'>Marketer</p>
-                    <h2 className='text-4xl md:my-4 my-1 font-bold'>Noah Harris</h2>
+                    <p className='text-xl mt-2 font-bold text-[gray]'>Project Partner</p>
+                    <h2 className='text-4xl md:my-4 my-1 font-bold'>Mikko</h2>
                     <p className='font-bold text-[gray]'>Expertly connects our fashion passion with our customers, making every shopping experience special.</p>
                 </div>
             </div>

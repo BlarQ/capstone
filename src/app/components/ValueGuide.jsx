@@ -3,13 +3,13 @@ import React from 'react'
 
 export default function ValueGuide() {
   return (
-    <div className='md:grid flex flex-col-reverse md:grid-cols-2 px-5 my-32  items-center'>
+    <div className='md:grid flex flex-col-reverse md:grid-cols-2 px-5 my-16 sm:my-32  items-center'>
         <div>
             <Image className='py-4 md:py-0' src='/valueimg.jpg' alt='Shoe, glass, bag, belt and cloth on a gray rug' width={600} height={400} />
         </div> 
 
         <div>
-            <h2 className='md:text-6xl text-3xl font-bold sm:w-[80%] w-[60%]'>The value that guide us</h2>
+            <h2 className='md:text-6xl text-4xl font-bold sm:w-[80%] w-[70%]'>The value that guide us</h2>
             <p className='my-4 text-sm md:text-base font-bold text-[gray]'>At the heart of our brand are values that drive everything we do. We prioritize quality and craftsmanship, ensuring every product meets the highest standards. Innovation fuels our creativity, inspiring us to set trends rather than follow them. Sustainability is key, and we are committed to ethical practices that protect our planet.</p>
 
             <div>
