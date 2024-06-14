@@ -9,7 +9,7 @@ export default function CartPage() {
     const {setVal, cartItem, setCartItem} = useContext(SideBarContext)
     const {isOpen, setIsOpen} = useContext(SideBarContext)
 
-    const handleDelete =(item) => {
+    const handleDelete =(item, index) => {
         const newCartItems = [...cartItem]
         const deleteItem = newCartItems.splice(item, 1)[0]
         setCartItem(newCartItems)
@@ -46,7 +46,7 @@ export default function CartPage() {
                     <td className='text-left px-6'>{item.title}</td>
                     <td>{item.value}</td>
                     <td>{item.amount.toLocaleString()}</td>
-                    <td className='text-base cursor-pointer' onClick={() => handleDelete(item)}><AiTwotoneDelete /></td>
+                    <td className='text-base cursor-pointer' onClick={() => handleDelete(index)}><AiTwotoneDelete /></td>
                 </tr>
             ))}
             
