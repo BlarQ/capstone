@@ -5,6 +5,8 @@ import React, { useContext, useState } from 'react'
 import { data } from "./data";
 import { FaPlus } from 'react-icons/fa6';
 import { SideBarContext } from '../providers';
+import { Alert } from '@mui/material';
+import { MdCheckCircleOutline } from 'react-icons/md';
 
 const productData = data.filter(datum => datum.type == 'Shoe').slice(0, 3);
 
@@ -34,6 +36,14 @@ export default function HomeProduct() {
         }
 
         setCartItem(newCartItems);
+
+        
+    }
+
+    if (handleButtonIncrease){
+        <Alert icon={<MdCheckCircleOutline fontSize="inherit" />} severity="success">
+            Here is a gentle confirmation that your action was successful.
+        </Alert>
     }
 
     const productLog = productData.map(product => (

@@ -35,7 +35,7 @@ export default function CartPage() {
                                 <th className='text-left px-6'>Product</th>
                                 <th>Quantity</th>
                                 <th>Amount</th>
-                                <th>Action</th>
+                                <th>Delete</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -44,7 +44,7 @@ export default function CartPage() {
                                     <td className='text-left px-6'>{item.title}</td>
                                     <td>{item.value}</td>
                                     <td>{item.amount.toLocaleString()}</td>
-                                    <td className='text-base cursor-pointer' onClick={() => handleDelete(item.id)}><AiTwotoneDelete /></td>
+                                    <td className='text-base cursor-pointer px-[5%]' onClick={() => handleDelete(item.id)}><AiTwotoneDelete /></td>
                                 </tr>
                             ))}
                         </tbody>
