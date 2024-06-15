@@ -40,11 +40,11 @@ export default function HomeProduct() {
         
     }
 
-    if (handleButtonIncrease){
-        <Alert icon={<MdCheckCircleOutline fontSize="inherit" />} severity="success">
-            Here is a gentle confirmation that your action was successful.
-        </Alert>
-    }
+    // if (handleButtonIncrease === 'true'){
+    //     <Alert icon={<MdCheckCircleOutline fontSize="inherit" />} severity="success">
+    //         Here is a gentle confirmation that your action was successful.
+    //     </Alert>
+    // }
 
     const productLog = productData.map(product => (
         <section key={product.id}>
