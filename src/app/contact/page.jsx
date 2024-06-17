@@ -48,7 +48,7 @@ export default function page() {
                 </div>
 
                 <div className='flex flex-col items-start space-y-10'>
-                  <textarea className='outline-none shadow-md border-[1px] rounded-xl min-h-48 px-5 py-3 w-full' name="text" id="text" placeholder='Leave us a message...'></textarea>
+                  <textarea className='outline-none shadow-md border-[1px] rounded-xl min-h-48 px-5 py-3 w-full' name="message" id="text" placeholder='Leave us a message...'></textarea>
                   <button className='bg-[#34c759] hover:scale-95 transition-all duration-300 py-3 px-5 rounded-full shadow-sm shadow-[#34c759] text-white font-semibold flex items-center justify-center'>Send Message
                     <FiArrowUpRight className='text-xl'/>
                   </button>

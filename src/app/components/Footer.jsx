@@ -30,9 +30,8 @@ export default function Footer() {
                     <p className='text-xl font-bold'>Pages</p>
                     <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Home</Link>
                     <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/about'>About</Link>
-                    <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Pages</Link>
                     <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/product'>Products</Link>
-                    <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Contact</Link>
+                    <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/contact'>Contact</Link>
                   </div>
                 </section>
               </section>
