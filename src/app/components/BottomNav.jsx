@@ -72,7 +72,7 @@ export const BottomNav = () => {
                     <div className='flex items-center justify-center space-x-7 sm:hidden'>
 
                         <Cart className='cursor-pointer' />
-                        <Link className='bg-[#34c759] text-white py-3 px-4 rounded-full font-semibold hover:scale-95 hover:transition duration-500' href='/'>Get in touch</Link>
+                        <Link className='bg-[#34c759] text-white py-3 px-4 rounded-full font-semibold hover:scale-95 hover:transition duration-500' href='/contact'>Buzz!</Link>
                     </div>
                 </ul>
             </div>
@@ -82,7 +82,7 @@ export const BottomNav = () => {
             </div>
             <div className='justify-center items-center space-x-7 hidden sm:flex'>
                 <Cart className='cursor-pointer' />
-                <Link className='bg-[#34c759] text-white py-3 px-4 rounded-full font-semibold hover:scale-95 hover:transition duration-500' href='/'>Get in touch</Link>
+                <Link className='bg-[#34c759] text-white py-3 px-6 rounded-full font-semibold hover:scale-95 hover:transition duration-500 capitalize' href='/contact'>Buzz!</Link>
             </div>
 
 
