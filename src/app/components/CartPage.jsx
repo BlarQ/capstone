@@ -38,7 +38,7 @@ export default function CartPage() {
                                 <th>Delete</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody> 
                             {cartItem.map(item => (
                                 <tr key={item.id}>
                                     <td className='text-left px-6'>{item.title}</td>

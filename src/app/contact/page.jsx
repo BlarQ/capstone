@@ -9,9 +9,9 @@ import { PiChatTextFill, PiHandbagSimpleFill, PiTagFill } from "react-icons/pi";
 export default function page() {
   return (
     <div>
-        <section className='flex w-full justify-center items-start px-10 my-10 space-x-10'>
+        <section className='flex w-full justify-center items-start px-10 py-10 space-x-10'>
             <div className='w-1/2'>
-                <h1 className='text-7xl font-extrabold w-[80%]'>Get in touch with us today!</h1>
+                <h1 className='text-7xl font-extrabold w-[90%]'>Get in touch with us today!</h1>
 
                 <p className='py-5 font-semibold text-[gray]'>Discover the latest trends and exclusive styles at our fashion store. Whether you&apos;re looking for chic everyday wear, elegant evening outfits, or the perfect accessories to complete your look, we have it all. Our friendly and knowledgeable team is here to help you find exactly what you need. Visit us in-store or reach out to us online for personalized fashion advice and customer service. Elevate your wardrobe with our carefully curated collections and enjoy a shopping experience like no other.</p>
 
@@ -57,7 +57,7 @@ export default function page() {
             </div>
         </section>
 
-        <section className='my-40'>
+        <section className='my-32'>
           <div className='flex flex-col justify-center items-center'>
             <h2 className='text-6xl font-bold my-4'>Reach us directly</h2>
             <p className='w-1/2 text-center font-semibold text-[gray]'>At TrendLuxe, we are dedicated to providing you with the best in fashion and customer service. Whether you have a question about our products, need assistance with your order, or have any other inquiries, our team is here to help.</p>
@@ -121,6 +121,34 @@ export default function page() {
               </div>
             </Link>
             
+          </div>
+        </section>
+
+        <section className='px-10 w-full flex items-start my-10'>
+          <div className='w-[40%]'>
+            <div className='w-[90%]'>
+              <h2 className='text-6xl font-bold'>Frequently asked questions</h2>
+              <p className='py-5 font-semibold text-[gray] w-4/5'>Welcome to TrendLuxe&#39;s FAQ section! Here, you&#39;ll find answers to the most common questions about our products, services, and policies.</p>
+
+              <Link className='flex items-center justify-start py-2 px-4 bg-[#34c759] text-white font-semibold rounded-full gap-x-1 w-fit' href='#contact'>Contact
+                <FiArrowUpRight />
+              </Link>
+            </div>
+          </div>
+
+          <div className='text-4xl font-bold divide-y-2 border-y-2'>
+            <div className='py-10 px-2'>
+              <p>How do I place an order?</p>
+            </div>
+            <div className='py-10 px-2'>
+              <p>What payment methods do you accept?</p>
+            </div>
+            <div className='py-10 px-2'>
+              <p> How can I track my order?</p>
+            </div>
+            <div className='py-10 px-2'>
+              <p>How do I place an order?</p>
+            </div>
           </div>
         </section>
     </div>
