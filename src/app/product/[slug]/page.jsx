@@ -5,6 +5,13 @@ import Image from 'next/image';
 import CustomersReview from '@/app/components/CustomersReview';
 import Link from 'next/link';
 import { SideBarContext } from '@/app/providers';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 
 export default function ProductPage({ params }) {
     const { cartItem, setCartItem, val, setVal, inputVal, setInputVal } = useContext(SideBarContext);
@@ -41,7 +48,7 @@ export default function ProductPage({ params }) {
     }
 
     // To find related products based on the type of the current product
-    const relatedProducts = data.filter(p => p.type === product.type && p.id !== product.id).slice(0, 5);
+    const relatedProducts = data.filter(p => p.type === product.type && p.id !== product.id);
 
     return (
         <div className='mb-10'>
@@ -63,21 +70,49 @@ export default function ProductPage({ params }) {
 
             {/* Display related products */}
             {relatedProducts.length > 0 && (
-                <div className="mt-10 sm:mx-8 mx-4">
+           
+                    <div className="mt-10 sm:mx-8 mx-4">
                     <h2 className="text-xl sm:text-3xl font-bold mb-5 text-[#2e4053]">Related Products</h2>
+                    <Swiper
+                // install Swiper modules
+                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                spaceBetween={10}
+                navigation
+                pagination={{ clickable: true }}
+                breakpoints={{
+                    // when window width is >= 640px
+                    640: {
+                        slidesPerView: 1,
+                    },
+                    // when window width is >= 768px
+                    768: {
+                        slidesPerView: 2,
+                    },
+                    // when window width is >= 1024px
+                    1024: {
+                        slidesPerView: 4,
+                    },
+                }}
+                onSwiper={(swiper) => console.log(swiper)}
+                onSlideChange={() => console.log('slide change')}
+            >
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
                         {relatedProducts.map((relatedProduct) => (
-                            <div key={relatedProduct.id} className="flex flex-col items-center bg-gray-200 rounded-xl p-2 hover:shadow-md duration-300">
+                        <SwiperSlide key={relatedProduct.id}>
+                            <div className="flex flex-col items-center bg-gray-200 rounded-xl p-2 hover:shadow-md duration-300">
                                 <Link href={`/product/${relatedProduct.name.split(' ').join('-')}`}>
                                         <h3 className="sm:text-lg font-bold mb-2 text-[#2e4053]">{relatedProduct.name}</h3>
                                         <p className="font-bold mt-2 text-[#2e4053]">&#8358;{relatedProduct.amount.toLocaleString()}</p>
                                         <Image src={`/${relatedProduct.name.split(' ').join('-')}.png`} alt={relatedProduct.name} width={200} height={200} />
                                 </Link>
                             </div>
+                        </SwiperSlide>
                         ))}
                     </div>
+            </Swiper>
                 </div>
             )}
+            
 
             <CustomersReview />
         </div>

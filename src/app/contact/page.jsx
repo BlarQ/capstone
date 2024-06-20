@@ -159,7 +159,7 @@ export default function Page() {
               <h2 className='text-4xl text-center sm:text-left sm:text-6xl font-bold'>Frequently asked questions</h2>
               <p className='py-5 font-semibold text-center sm:text-left text-[gray] sm:w-4/5'>Welcome to TrendLuxe&#39;s FAQ section! Here, you&#39;ll find answers to the most common questions about our products, services, and policies.</p>
 
-              <Link className='flex justify-center items-center sm:justify-start py-2 px-4 bg-[#34c759] text-white font-semibold rounded-full gap-x-1 w-full sm:w-fit' href='#cont'>Contact
+              <Link className='flex justify-center items-center sm:justify-start py-2 px-4 bg-[#34c759] text-white font-semibold rounded-full gap-x-1 w-full sm:w-fit hover:scale-95 duration-300' href='#cont'>Contact
                 <FiArrowUpRight />
               </Link>
             </div>
