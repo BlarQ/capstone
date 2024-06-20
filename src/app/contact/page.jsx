@@ -38,47 +38,47 @@ export default function Page() {
 
   return (
     <div id='cont'>
-        <section className='flex w-full justify-center items-start px-10 py-10 space-x-10'>
-            <div className='w-1/2'>
-                <h1 className='text-7xl font-extrabold w-[90%]'>Get in touch with us today!</h1>
+        <section className='flex flex-col sm:flex-row w-full justify-center items-start px-5 sm:px-10 sm:py-10 sm:space-x-10 space-y-14 sm:space-y-0'>
+            <div className='sm:w-1/2'>
+                <h1 className='text-4xl sm:text-7xl font-extrabold w-[90%]'>Get in touch with us today!</h1>
 
                 <p className='py-5 font-semibold text-[gray]'>Discover the latest trends and exclusive styles at our fashion store. Whether you&apos;re looking for chic everyday wear, elegant evening outfits, or the perfect accessories to complete your look, we have it all. Our friendly and knowledgeable team is here to help you find exactly what you need. Visit us in-store or reach out to us online for personalized fashion advice and customer service. Elevate your wardrobe with our carefully curated collections and enjoy a shopping experience like no other.</p>
 
-                <section className='space-y-10'>
+                <section className='space-y-4 sm:space-y-10'>
                   <div className='flex space-x-4 group cursor-pointer w-fit hover:translate-x-2 duration-500'>
-                    <div className='bg-green-50 w-fit p-5 rounded-full'>
+                    <div className='bg-green-50 w-fit flex items-center justify-center p-4 sm:p-5 rounded-full'>
                       <HiMail className='text-4xl text-green-400'/>
                     </div>
                     <div className='font-bold text-2xl flex flex-col justify-between py-1'>
-                      <h2 className='text-[gray] text-xl'>EMAIL US</h2>
-                      <Link href="mailto:collinsogunlala@gmail.com" className='group-hover:text-green-400 duration-500 transition-all'>contact@trendluxe.com</Link>
+                      <h2 className='text-[gray] text-lg sm:text-xl'>EMAIL US</h2>
+                      <Link href="mailto:collinsogunlala@gmail.com" className='group-hover:text-green-400 duration-500 transition-all text-xl sm:text-2xl'>contact@trendluxe.com</Link>
                     </div>
                   </div>
                   
                   <div className='flex space-x-4 group cursor-pointer w-fit hover:translate-x-2 duration-500'>
-                    <div className='bg-blue-50 w-fit p-5 rounded-full'>
+                    <div className='bg-blue-50 w-fit p-4 sm:p-5 rounded-full'>
                       <MdEmojiEmotions className='text-4xl text-blue-400'/>
                     </div>
                     <div className='font-bold text-2xl flex flex-col justify-between py-1'>
-                      <h2 className='text-[gray] text-xl'>CALL US</h2>
-                      <Link href="tel:+2348174726892" className='group-hover:text-blue-400 duration-500 transition-all'>(234) 817 4726 892</Link>
+                      <h2 className='text-[gray] text-lg sm:text-xl'>CALL US</h2>
+                      <Link href="tel:+2348174726892" className='group-hover:text-blue-400 duration-500 transition-all text-xl sm:text-2xl'>(234) 817 4726 892</Link>
                     </div>
                   </div>
                 </section>
             </div>
 
-            <div className='w-1/2'>
-              <form className='border-[1px] py-20 px-12 space-y-10'>
-                <div className='grid grid-cols-2 grid-rows-2 gap-7'>
+            <div className='sm:w-1/2 w-full'>
+              <form className='border-[1px] py-10 sm:py-20 px-5 sm:px-12 space-y-5 sm:space-y-10'>
+                <div className='grid sm:grid-cols-2 grid-rows-2 gap-5 sm:gap-7'>
                   <input className='h-11 rounded-full px-5 outline-none border-[1px] shadow-md placeholder:font-medium' type="text" name="name" placeholder='Enter your name' />
                   <input className='h-11 rounded-full px-5 outline-none border-[1px] shadow-md placeholder:font-medium' type="email" name="email" placeholder='example@email.com' />
                   <input className='h-11 rounded-full px-5 outline-none border-[1px] shadow-md placeholder:font-medium' type="text" name="mobile" placeholder='(+234) 817 4726 892' />
                   <input className='h-11 rounded-full px-5 outline-none border-[1px] shadow-md placeholder:font-medium' type="text" name="service" placeholder='ex. Services' />
                 </div>
 
-                <div className='flex flex-col items-start space-y-10'>
-                  <textarea className='outline-none shadow-md border-[1px] rounded-xl min-h-48 px-5 py-3 w-full' name="message" id="text" placeholder='Leave us a message...'></textarea>
-                  <button className='bg-[#34c759] hover:scale-95 transition-all duration-300 py-3 px-5 rounded-full shadow-sm shadow-[#34c759] text-white font-semibold flex items-center justify-center'>Send Message
+                <div className='flex flex-col items-start space-y-5 sm:space-y-10'>
+                  <textarea className='outline-none shadow-md border-[1px] rounded-xl min-h-36 sm:min-h-48 px-5 py-3 w-full' name="message" id="text" placeholder='Leave us a message...'></textarea>
+                  <button className='bg-[#34c759] w-full sm:w-fit hover:scale-95 transition-all duration-300 py-3 px-5 rounded-full shadow-sm shadow-[#34c759] text-white font-semibold flex items-center justify-center'>Send Message
                     <FiArrowUpRight className='text-xl'/>
                   </button>
                 </div>
@@ -86,14 +86,14 @@ export default function Page() {
             </div>
         </section>
 
-        <section className='my-32'>
-          <div className='flex flex-col justify-center items-center'>
-            <h2 className='text-6xl font-bold my-4'>Reach us directly</h2>
-            <p className='w-1/2 text-center font-semibold text-[gray]'>At TrendLuxe, we are dedicated to providing you with the best in fashion and customer service. Whether you have a question about our products, need assistance with your order, or have any other inquiries, our team is here to help.</p>
+        <section className='sm:my-32 my-20'>
+          <div className='flex flex-col justify-center items-center px-5 sm:px-10'>
+            <h2 className='sm:text-6xl text-4xl font-bold my-4'>Reach us directly</h2>
+            <p className='sm:w-1/2 w-full text-center font-semibold text-[gray]'>At TrendLuxe, we are dedicated to providing you with the best in fashion and customer service. Whether you have a question about our products, need assistance with your order, or have any other inquiries, our team is here to help.</p>
 
           </div>
-          <div className='flex gap-6 px-10 my-12'>
-            <Link href="mailto:collinsogunlala@gmail.com" className='bg-orange-100 w-2/3 p-10 hover:scale-95 duration-300'>
+          <div className='grid grid-cols-1 sm:grid-cols-3 gap-6 px-5 sm:px-10 my-12'>
+            <Link href="mailto:collinsogunlala@gmail.com" className='bg-orange-100 p-10 hover:scale-95 duration-300 w-full'>
               <div className='pb-20'>
                 <div className='p-5 w-fit bg-white rounded-full'>
                   <PiHandbagSimpleFill className='text-5xl text-orange-400'/>
@@ -112,7 +112,7 @@ export default function Page() {
               </div>
             </Link>
 
-            <Link href="mailto:collinsogunlala@gmail.com" className='bg-pink-100 w-2/3 p-10 hover:scale-95 duration-300'>
+            <Link href="mailto:collinsogunlala@gmail.com" className='bg-pink-100 p-10 hover:scale-95 duration-300 w-full'>
               <div className='pb-20'>
                 <div className='p-5 w-fit bg-white rounded-full'>
                   <PiTagFill className='text-5xl text-pink-400'/>
@@ -131,7 +131,7 @@ export default function Page() {
               </div>
             </Link>
 
-            <Link href="whatsapp://send?phone=2348174726892&text=Hello!" className='bg-green-100 w-2/3 p-10 hover:scale-95 duration-300'>
+            <Link href="whatsapp://send?phone=2348174726892&text=Hello!" className='bg-green-100 p-10 hover:scale-95 duration-300 w-full'>
               <div className='pb-20'>
                 <div className='p-5 w-fit bg-white rounded-full'>
                   <PiChatTextFill className='text-5xl text-green-400'/>
@@ -153,19 +153,19 @@ export default function Page() {
           </div>
         </section>
 
-        <section className='px-10 w-full flex items-start my-10 gap-x-5'>
-          <div className='w-[40%] sticky top-36'>
-            <div className='w-[90%]'>
-              <h2 className='text-6xl font-bold'>Frequently asked questions</h2>
-              <p className='py-5 font-semibold text-[gray] w-4/5'>Welcome to TrendLuxe&#39;s FAQ section! Here, you&#39;ll find answers to the most common questions about our products, services, and policies.</p>
+        <section className='sm:px-10 px-5 w-full flex flex-col sm:flex-row items-start my-10 gap-y-10 gap-x-5'>
+          <div className='sm:w-[40%] sm:sticky sm:top-36'>
+            <div className='sm:w-[90%]'>
+              <h2 className='text-4xl text-center sm:text-left sm:text-6xl font-bold'>Frequently asked questions</h2>
+              <p className='py-5 font-semibold text-center sm:text-left text-[gray] sm:w-4/5'>Welcome to TrendLuxe&#39;s FAQ section! Here, you&#39;ll find answers to the most common questions about our products, services, and policies.</p>
 
-              <Link className='flex items-center justify-start py-2 px-4 bg-[#34c759] text-white font-semibold rounded-full gap-x-1 w-fit' href='#cont'>Contact
+              <Link className='flex justify-center items-center sm:justify-start py-2 px-4 bg-[#34c759] text-white font-semibold rounded-full gap-x-1 w-full sm:w-fit' href='#cont'>Contact
                 <FiArrowUpRight />
               </Link>
             </div>
           </div>
 
-          <div className='text-4xl font-bold divide-y-2 border-y-2 w-[60%]'>
+          <div className='text-2xl sm:text-4xl font-bold divide-y-2 border-y-2 sm:w-[60%]'>
             <div className='hover:pl-1 duration-300'>
               <div className='py-10 px-2 flex justify-between items-center cursor-pointer' onClick={showFaq}>
                 <p>How do I place an order?</p>

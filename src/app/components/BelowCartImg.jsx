@@ -13,7 +13,7 @@ export default function BelowCartImg() {
         height={400} 
         className='w-full lg:w-[650px]' 
       />
-      <div className='mt-10 flex flex-col items-center lg:items-start'>
+      <div className='flex flex-col items-center lg:items-start gap-y-10'>
         <div className='flex flex-col items-center md:justify-start md:mb-2 md:items-start justify-center text-center lg:text-left lg:my-6'>
           <h2 className='text-3xl sm:text-5xl lg:text-7xl font-bold text-[#2e4053]'>
             Discover Our Mission for Fashion Trends

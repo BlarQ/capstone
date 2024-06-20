@@ -55,7 +55,6 @@ export default function Footer() {
                   <div className='flex flex-col md:gap-4 gap-2 sm:items-start'>
                     <p className='sm:mb-6'></p>
                     <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>FAQs</Link>
-                    <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>About Us</Link>
                     <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Vendors</Link>
                     <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Affiliate</Link>
                     <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Terms of Service</Link>
