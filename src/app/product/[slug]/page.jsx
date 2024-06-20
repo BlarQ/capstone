@@ -101,7 +101,7 @@ export default function ProductPage({ params }) {
                         <SwiperSlide key={relatedProduct.id}>
                             <div className="flex flex-col items-center bg-gray-200 rounded-xl p-2 hover:shadow-md duration-300">
                                 <Link href={`/product/${relatedProduct.name.split(' ').join('-')}`}>
-                                        <h3 className="sm:text-lg font-bold mb-2 text-[#2e4053]">{relatedProduct.name}</h3>
+                                        <h3 className="sm:text-lg font-bold my-2 text-[#2e4053]">{relatedProduct.name}</h3>
                                         <p className="font-bold mt-2 text-[#2e4053]">&#8358;{relatedProduct.amount.toLocaleString()}</p>
                                         <Image src={`/${relatedProduct.name.split(' ').join('-')}.png`} alt={relatedProduct.name} width={200} height={200} />
                                 </Link>
