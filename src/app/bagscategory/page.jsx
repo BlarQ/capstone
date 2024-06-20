@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { FaPlus } from 'react-icons/fa6';
 import { SideBarContext } from '../providers'; // Make sure to import your context for cart management
 
-const bagData = data.filter(datum => datum.type === 'Bags').slice(0, 3);
+const bagData = data.filter(datum => datum.type === 'Bags')
 
 export default function Bags() {
     const { cartItem, setCartItem, val, setVal, inputVal, setInputVal } = useContext(SideBarContext);
