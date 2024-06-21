@@ -21,7 +21,7 @@ export default function BelowCartImg() {
           <p className='my-5 font-bold text-[#2e4053] text-sm sm:text-base lg:text-lg'>
             Stay ahead of the curve with our curated selection of stylish shirts, trendy shoes, chic bags, and sleek wallets. We bring you the latest fashion trends, ensuring you always look your best. Shop now and be a trendsetter!
           </p>
-          <Link href='/' className='flex bg-[#2e4053] py-3 sm:py-4 px-4 sm:px-5 md:max-w-36 w-full items-center justify-center rounded-full text-white font-bold hover:scale-95 duration-300'>
+          <Link href='/product' className='flex bg-[#2e4053] py-3 sm:py-4 px-4 sm:px-5 md:max-w-36 w-full items-center justify-center rounded-full text-white font-bold hover:scale-95 duration-300'>
               Shop Now <MdArrowOutward className='text-xl ml-1' />
           </Link>
         </div>

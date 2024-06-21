@@ -11,7 +11,7 @@ export default function DiscoverMission() {
         <p className='font-bold text-sm md:text-base text-gray-600 my-4 md:w-fit'>
           At TrendLuxe, our mission is to empower individuals through fashion, offering a curated selection of high-quality clothing, wristwatches, and shoes that inspire confidence and joy. We are committed to exceptional craftsmanship, sustainable practices, and innovative designs that reflect the unique style of our customers. Our goal is to create a shopping experience that not only enhances your wardrobe but also elevates your everyday life.
         </p>
-        <Link href='/' className='flex bg-[#2e4053] mt-6 md:mt-10 py-3 md:py-4 px-4 md:px-5 md:max-w-36 items-center justify-center rounded-full text-white font-bold hover:scale-95 duration-300'>
+        <Link href='/product' className='flex bg-[#2e4053] mt-6 md:mt-10 py-3 md:py-4 px-4 md:px-5 md:max-w-36 items-center justify-center rounded-full text-white font-bold hover:scale-95 duration-300'>
             Shop Now <MdArrowOutward className='text-xl ml-1' />
         </Link>
       </div>

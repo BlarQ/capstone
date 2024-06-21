@@ -73,7 +73,7 @@ export default function Page() {
         <div>
             <ProductPageBanner />
             <div className='my-4 px-4 md:px-8'>
-                <h1 className='text-center font-bold text-3xl my-4 md:text-6xl text-[#2e4053]'>Our Product Categories</h1>
+                <h1 className='text-center font-bold text-3xl my-4 md:text-6xl text-[#2e4053]' id='explore'>Our Product Categories</h1>
 
                 <div className='hidden sm:flex justify-center items-center my-8 gap-4 font-semibold text-[gray]'>
                     <div>
