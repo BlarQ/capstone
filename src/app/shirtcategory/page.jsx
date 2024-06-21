@@ -34,7 +34,7 @@ export default function page() {
         <h1 className='text-4xl uppercase font-bold text-center my-5 font-serif text-[#2e4053]'>Shirts</h1>
 
 
-        <div className='mx-4 sm:mx-8 grid gap-2 sm:gap-4 grid-cols-2 sm:grid-cols-3 sm:grid-rows-3'>
+        <div className='mx-4 sm:mx-8 grid gap-2 sm:gap-4 grid-cols-1 sm:grid-cols-3 sm:grid-rows-3'>
 
         {shirtProduct}
         </div>
