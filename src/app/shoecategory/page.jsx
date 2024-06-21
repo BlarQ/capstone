@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const product = data.filter(datum => datum.type === 'Shoe')
 
-export default function page() {
+export default function Page() {
     const shoeProduct = product.map(shoe =>(
         <section key={shoe.id}>
             <div className='flex justify-center text-[#2e4053] items-center border-2 group border-[#f7f7f7] hover:bg-[#2e4053] duration-300 hover:text-white hover:shadow-sm flex-col'>
