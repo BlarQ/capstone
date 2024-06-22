@@ -2,10 +2,22 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { MdArrowOutward } from 'react-icons/md'
+import { motion } from 'framer-motion'
+
 
 export default function FavoriteRoutine() {
+    const flowInVariants = {
+        hidden: { opacity: 0, y: 100 },
+        visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+      };
     return (
         <div className='my-16 mx-8'>
+            <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        variants={flowInVariants}
+        > 
             <div className='hidden md:flex justify-between items-end'>
                 <h2 className='text-6xl font-bold w-[40%] text-[#2e4053]'>Your Favorite Fashion Routines</h2>
 
@@ -13,7 +25,16 @@ export default function FavoriteRoutine() {
                     <Link href='/product' className='flex bg-[#2e4053] py-4 px-5 sm:max-w-36 items-center justify-center rounded-full text-white font-bold hover:scale-95 duration-300'>Shop Now <MdArrowOutward className='text-xl ml-1' /> </Link>
                 </div>
             </div>
+            </motion.div>
 
+
+
+            <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={flowInVariants}
+        > 
             <div>
                 <div className='hidden md:grid grid-cols-3 gap-20 mt-5'>
                     <div className='h-[700px]'>
@@ -67,6 +88,7 @@ export default function FavoriteRoutine() {
                 </div>
 
             </div>
+            </motion.div>
         </div>
     )
 }

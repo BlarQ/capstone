@@ -5,11 +5,17 @@ import React, { useContext } from 'react'
 import { FaPlus } from 'react-icons/fa6'
 import { data } from './data'
 import { SideBarContext } from '../providers'
+import { motion } from 'framer-motion'
+
 
 const categoryData = data.filter(datum => datum.type == 'Shirt').slice(0, 3)
 
 export default function CategoryProduct() {
     const { cartItem, setCartItem, val, setVal } = useContext(SideBarContext);
+    const flowInVariants = {
+        hidden: { opacity: 0, y: 100 },
+        visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+    };
 
     function handleButtonIncrease(product) {
         setVal(prev => prev + 1); // Increment val by 1
@@ -62,9 +68,17 @@ export default function CategoryProduct() {
 
     return (
         <section>
-            <div className='grid sm:grid-cols-3 grid-cols-1 gap-4 mx-4 md:mx-8 my-10'>
-                {categoryLog}
-            </div>
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={flowInVariants}
+            >
+
+                <div className='grid sm:grid-cols-3 grid-cols-1 gap-4 mx-4 md:mx-8 my-10'>
+                    {categoryLog}
+                </div>
+            </motion.div>
         </section>
     )
 }

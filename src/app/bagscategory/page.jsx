@@ -5,11 +5,17 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { FaPlus } from 'react-icons/fa6';
 import { SideBarContext } from '../providers'; // Make sure to import your context for cart management
+import { motion } from 'framer-motion'
 
-const bagData = data.filter(datum => datum.type === 'Bags')
+
+const bagData = data.filter(datum => datum.type === 'Bags').slice(0, 3)
 
 export default function Bags() {
     const { cartItem, setCartItem, val, setVal, inputVal, setInputVal } = useContext(SideBarContext);
+    const flowInVariants = {
+        hidden: { opacity: 0, y: 100 },
+        visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+    };
 
     function handleButtonIncrease(product) {
         setVal(prev => prev + 1); // Increment val by 1
@@ -63,9 +69,17 @@ export default function Bags() {
 
     return (
         <div>
-            <div className='grid sm:grid-cols-3 grid-cols-1 gap-2 sm:gap-4 mx-4 md:mx-8 my-5'>
-                {bagLog}
-            </div>
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={flowInVariants}
+            >
+
+                <div className='grid sm:grid-cols-3 grid-cols-1 gap-2 sm:gap-4 mx-4 md:mx-8 my-5'>
+                    {bagLog}
+                </div>
+            </motion.div>
         </div>
     );
 }

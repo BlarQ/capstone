@@ -5,8 +5,7 @@ import React, { useContext, useState } from 'react'
 import { data } from "./data";
 import { FaPlus } from 'react-icons/fa6';
 import { SideBarContext } from '../providers';
-import { Alert } from '@mui/material';
-import { MdCheckCircleOutline } from 'react-icons/md';
+import { motion } from 'framer-motion'
 
 const productData = data.filter(datum => datum.type == 'Shoe').slice(0, 3);
 
@@ -37,8 +36,13 @@ export default function HomeProduct() {
 
         setCartItem(newCartItems);
 
-        
+
     }
+
+    const flowInVariants = {
+        hidden: { opacity: 0, y: 100 },
+        visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+    };
 
     // if (handleButtonIncrease === 'true'){
     //     <Alert icon={<MdCheckCircleOutline fontSize="inherit" />} severity="success">
@@ -71,9 +75,16 @@ export default function HomeProduct() {
     ));
     return (
         <section>
-            <div className='grid sm:grid-cols-3 grid-cols-1 gap-4 mx-4 md:mx-8 my-10'>
-                {productLog}
-            </div>
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={flowInVariants}
+            >
+                <div className='grid sm:grid-cols-3 grid-cols-1 gap-4 mx-4 md:mx-8 my-10'>
+                    {productLog}
+                </div>
+            </motion.div>
         </section>
     );
 }

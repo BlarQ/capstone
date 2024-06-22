@@ -2,9 +2,25 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { MdArrowOutward } from 'react-icons/md'
+import { motion } from 'framer-motion'
+
 
 export default function BelowCartImg() {
+  const flowInVariants = {
+    hidden: { opacity: 0, y: 100 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+  };
+  const FlowThree = {
+    hidden: { opacity: 0, y: 100 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+  };
   return (
+    <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={flowInVariants}
+        > 
     <div className='w-[90%] md:w-[90%] mx-4 md:mx-8 flex flex-col-reverse lg:flex-row items-start justify-between md:gap-10'>
       <Image 
         src="/homeimg4.jpg" 
@@ -25,6 +41,13 @@ export default function BelowCartImg() {
               Shop Now <MdArrowOutward className='text-xl ml-1' />
           </Link>
         </div>
+
+        <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={FlowThree}
+        > 
         <div className='flex flex-row mt-10 sm:mt-12 md:gap-4 lg:gap-0 lg:-mt-2 lg:-ml-44'>
           <Image 
             src="/bci1.jpg" 
@@ -48,7 +71,9 @@ export default function BelowCartImg() {
             className='w-[33.3%] sm:w-64' 
           />
         </div>
+        </motion.div>
       </div>
     </div>
+    </motion.div>
   );
 }

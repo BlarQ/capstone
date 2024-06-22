@@ -9,16 +9,16 @@ import { SideBarContext } from '../providers';
 import HomeProduct from '../components/HomeProduct';
 import CategoryProduct from '../components/CategoryProduct';
 import Bags from '../bagscategory/page';
-
-// export const metadata = {
-//     title: "Our Products | TrenLuxe",
-//     description: "Amazing, Trendy, and Luxurious Fashion Items",
-// };
+import { motion } from 'framer-motion'
 
 const watchData = data.filter(datum => datum.type === 'Wristwatch').slice(0, 3);
 
 export default function Page() {
     const { cartItem, setCartItem, val, setVal } = useContext(SideBarContext);
+    const flowInVariants = {
+        hidden: { opacity: 0, y: 100 },
+        visible: { opacity: 1, y: 0, transition: { duration: 1 } },
+    };
 
     function handleButtonIncrease(product) {
         setVal(prev => prev + 1); // Increment val by 1
@@ -71,7 +71,15 @@ export default function Page() {
 
     return (
         <div>
-            <ProductPageBanner />
+            <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                variants={flowInVariants}
+            >
+
+                <ProductPageBanner />
+            </motion.div>
             <div className='my-4 px-4 md:px-8'>
                 <h1 className='text-center font-bold text-3xl my-4 md:text-6xl text-[#2e4053]' id='explore'>Our Product Categories</h1>
 
@@ -98,10 +106,19 @@ export default function Page() {
                         <FaArrowRight className='group-hover:pl-1 duration-300' />
                     </div>
                 </div>
-                <hr className=''/>
-                <div className='grid sm:grid-cols-3 grid-cols-1 gap-4 mt-10'>
-                    {categoryLog}
-                </div>
+                <hr className='' />
+
+                <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.5 }}
+                    variants={flowInVariants}
+                >
+
+                    <div className='grid sm:grid-cols-3 grid-cols-1 gap-4 mt-10'>
+                        {categoryLog}
+                    </div>
+                </motion.div>
             </div>
 
             <div className='py-4'>
@@ -112,7 +129,7 @@ export default function Page() {
                         <FaArrowRight className='group-hover:pl-1 duration-300' />
                     </div>
                 </div>
-                <hr className='mx-4 md:mx-8'/>
+                <hr className='mx-4 md:mx-8' />
                 <HomeProduct />
             </div>
 
@@ -124,7 +141,8 @@ export default function Page() {
                         <FaArrowRight className='group-hover:pl-1 duration-300' />
                     </div>
                 </div>
-                <hr className='mx-4 md:mx-8'/>
+                <hr className='mx-4 md:mx-8' />
+
                 <CategoryProduct />
             </div>
 
@@ -136,7 +154,7 @@ export default function Page() {
                         <FaArrowRight className='group-hover:pl-1 duration-300' />
                     </div>
                 </div>
-                <hr className='mx-4 md:mx-8'/>
+                <hr className='mx-4 md:mx-8' />
                 <Bags />
             </div>
         </div>
