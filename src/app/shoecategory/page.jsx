@@ -1,11 +1,39 @@
-import React from 'react'
+'use client'
+import React, { useContext } from 'react'
 import { data } from "../components/data";
 import Link from 'next/link';
 import Image from 'next/image';
+import { SideBarContext } from '../providers';
 
 const product = data.filter(datum => datum.type === 'Shoe')
 
 export default function Page() {
+    const {cartItem, setCartItem, val, setVal } = useContext(SideBarContext)
+
+    function handleButtonIncrease(shoe) {
+        setVal(prev => prev + 1); // Increment val by 1
+
+        let newCartItems;
+        const itemIndex = cartItem.findIndex(item => item.title === shoe.name);
+        if (itemIndex !== -1) {
+            newCartItems = cartItem.map((item, index) =>
+                index === itemIndex ? {
+                    ...item,
+                    value: item.value + 1,
+                    amount: item.amount + shoe.amount
+                } : item
+            );
+        } else {
+            newCartItems = [...cartItem, {
+                id: shoe.id,
+                title: shoe.name,
+                value: 1,
+                amount: shoe.amount
+            }];
+        }
+
+        setCartItem(newCartItems);
+    }
     const shoeProduct = product.map(shoe =>(
         <section key={shoe.id}>
             <div className='flex justify-center text-[#2e4053] items-center border-2 group border-[#f7f7f7] hover:bg-[#2e4053] duration-300 hover:text-white hover:shadow-sm flex-col'>
@@ -19,7 +47,7 @@ export default function Page() {
                     </section>
                 </Link>
 
-                <Link className='relative shadow-md -mt-16 py-4 flex items-center justify-center space-x-1 px-6 rounded-full bg-[#f7f7f7] font-bold text-[#2e4053] hover:text-white hover:bg-[#34c759] hover:scale-95 duration-300' href='/'>
+                <Link className='relative shadow-md -mt-16 py-4 flex items-center justify-center space-x-1 px-6 rounded-full bg-[#f7f7f7] font-bold text-[#2e4053] hover:text-white hover:bg-[#34c759] hover:scale-95 duration-300' href='/' onClick={() => handleButtonIncrease(shoe)}>
                     <p>Add to cart</p>
                 </Link>
 
