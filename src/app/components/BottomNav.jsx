@@ -87,7 +87,7 @@ export const BottomNav = () => {
                 <Cart className='cursor-pointer' />
                 <ul onClick={showNav} className='p-2 bg-[#34c759] rounded-md shadow-md text-white'>
                     <GiHamburgerMenu className={hide ? "hidden" : "block text-2xl"}/>
-                    <RiCloseFill className={`${!hide ? "hidden" : "block text-[1.5rem] font-extrabold"} font-bold text-base`}/>
+                    <RiCloseFill className={`${!hide ? "hidden" : "block text-2xl font-extrabold"} font-bold text-base`}/>
                 </ul>
             </div>
         </nav>
