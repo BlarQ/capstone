@@ -26,11 +26,6 @@ export const BottomNav = () => {
         setHide(!hide)
     }
 
-    function handleCartOpen(){
-        setIsOpen(!isOpen)
-        alert('yes ')
-    }
-
     // Click outside handler
     useEffect(() => {
         function handleClickOutside(event) {
@@ -53,7 +48,7 @@ export const BottomNav = () => {
                     TrendLuxe
                 </Link>
 
-                <ul className={hide ? 'absolute font-semibold flex sm:flex-row right-5 text-white sm:text-black flex-col h-[55vh] mt-[29rem] sm:flex pt-5 gap-y-10 bg-[#a0a0a0e7] sm:bg-transparent sm:mt-0 sm:h-0 sm:left-48 sm:font-semibold sm:gap-x-5 w-60 pr-10 rounded-md items-end' : 'sm:relative hidden sm:flex items-center justify-start gap-5 font-semibold' }>
+                <ul className={hide ? 'fixed font-semibold flex sm:flex-row text-[#2e4053] left-0 w-full sm:text-black flex-col h-[40vh] mt-[22rem] sm:flex px-5 pt-5 gap-y-5 bg-white shadow-md sm:bg-transparent sm:mt-0 sm:h-0 sm:left-48 sm:font-semibold sm:gap-x-5 items-start' : 'sm:relative hidden sm:flex items-center justify-start gap-5 font-semibold' }>
                     <li >
                         <Link href='/'>Home</Link>
                     </li>
@@ -69,28 +64,30 @@ export const BottomNav = () => {
                         <Link href='/product'>Product</Link>
                     </li>
                     
-                    <div className='flex items-center justify-center space-x-7 sm:hidden'>
+                    <div className='flex sm:hidden w-full'>
 
-                        <Cart className='cursor-pointer' />
-                        <Link className='bg-[#34c759] text-white py-3 px-4 rounded-full font-semibold hover:scale-95 hover:transition duration-500' href='/contact'>Buzz!</Link>
+                        {/* <Cart className='cursor-pointer' /> */}
+                        <Link className='bg-[#34c759] text-center text-white py-3 min-w-[100%] rounded-full font-semibold hover:scale-95 hover:transition duration-500' href='/contact'>Buzz!</Link>
                     </div>
                 </ul>
             </div>
 
-            <div>
+            <div className='hidden sm:block'>
                 <SearchBar />
             </div>
+
+
             <div className='justify-center items-center space-x-7 hidden sm:flex'>
                 <Cart className='cursor-pointer' />
                 <Link className='bg-[#34c759] text-white py-3 px-6 rounded-full font-semibold hover:scale-95 hover:transition duration-500 capitalize' href='/contact'>Buzz!</Link>
             </div>
 
 
-            <div className='sm:hidden cursor-pointer'>
-                <ul onClick={showNav}>
-                    <GiHamburgerMenu className={hide ? "hidden" : "block"}/>
-                    <RiCloseFill className={`${!hide ? "hidden" : "block"} font-bold text-base`}/>
-
+            <div className='sm:hidden cursor-pointer flex justify-center items-center space-x-8'>
+                <Cart className='cursor-pointer' />
+                <ul onClick={showNav} className='p-2 bg-[#34c759] rounded-md shadow-md text-white'>
+                    <GiHamburgerMenu className={hide ? "hidden" : "block text-2xl"}/>
+                    <RiCloseFill className={`${!hide ? "hidden" : "block text-[1.5rem] font-extrabold"} font-bold text-base`}/>
                 </ul>
             </div>
         </nav>
