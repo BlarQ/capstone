@@ -1,7 +1,7 @@
 "use client"
 import Link from 'next/link'
 import React, { useContext, useEffect, useRef, useState } from 'react'
-import { MdKeyboardArrowUp } from "react-icons/md"
+import { MdClose, MdKeyboardArrowUp } from "react-icons/md"
 import { RiCloseFill } from "react-icons/ri";
 import Cart from './Cart'
 import SearchBar from './SearchBar'
@@ -87,7 +87,8 @@ export const BottomNav = () => {
                 <Cart className='cursor-pointer' />
                 <ul onClick={showNav} className='p-2 bg-[#34c759] rounded-md shadow-md text-white'>
                     <GiHamburgerMenu className={hide ? "hidden" : "block text-2xl"}/>
-                    <RiCloseFill className={`${!hide ? "hidden" : "block text-2xl font-extrabold"} font-bold text-base`}/>
+                    <RiCloseFill className={`${!hide ? "hidden" : "block text-2xl font-bold"}`}/>
+                    {/* <MdClose className={`${!hide ? "hidden" : "block text-2xl"}`}/> */}
                 </ul>
             </div>
         </nav>
