@@ -57,9 +57,9 @@ export default function Footer() {
                   <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/shoecategory'>Shoes</Link>
                   <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/shirtcategory'>Shirts</Link>
                   <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/watchcategory'>WristWatch</Link>
-                  <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Bag & Purse for Women</Link>
-                  <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Breifcase</Link>
-                  <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Wallets</Link>
+                  <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/bagscategory'>Bag & Purse for Women</Link>
+                  <Link className='hover:translate-x-1 duration-300 w-fit text-[gray]' href='/'>Breifcase (Out of Stock)</Link>
+                  <Link className='hover:translate-x-1 duration-300 w-fit text-[gray]' href='/'>Wallets (Out of Stock)</Link>
                 </div>
               </section>
             </section>
@@ -68,7 +68,7 @@ export default function Footer() {
               <section>
                 <div className='flex flex-col md:gap-4 gap-2 sm:items-start'>
                   <p className='sm:mb-6'></p>
-                  <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>FAQs</Link>
+                  <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/faqs'>FAQs</Link>
                   <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Vendors</Link>
                   <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Affiliate</Link>
                   <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Terms of Service</Link>
