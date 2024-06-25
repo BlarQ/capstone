@@ -71,7 +71,7 @@ export default function Footer() {
                   <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/faqs'>FAQs</Link>
                   <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Vendors</Link>
                   <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Affiliate</Link>
-                  <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Terms of Service</Link>
+                  <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/terms'>Terms of Service</Link>
                   <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Shipping Information</Link>
                   <Link className='hover:translate-x-1 duration-300 w-fit hover:text-[#e7e7e7]' href='/'>Reviews and Testimonials</Link>
                 </div>
