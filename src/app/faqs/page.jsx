@@ -32,11 +32,11 @@ export default function Page() {
   return (
     <div>
         <div className='w-full h-[60vh] bg-[#ecfcec] flex flex-col justify-center items-center'>
-            <h1 className='text-7xl font-bold text-[#2e4053] py-4'>Frequently Asked Questions</h1>
-            <p className='text-xl w-[60%] text-center font-semibold text-[gray]'>Welcome to TrendLuxe&#39;s FAQ section! Here, you&#39;ll find answers to the most common questions about our products, services, and policies.</p>
+            <h1 className='sm:text-7xl text-4xl text-center font-bold text-[#2e4053] py-4'>Frequently Asked Questions</h1>
+            <p className='text-xl sm:w-[60%] text-center font-semibold text-[gray]'>Welcome to TrendLuxe&#39;s FAQ section! Here, you&#39;ll find answers to the most common questions about our products, services, and policies.</p>
         </div>
 
-        <div className='py-20 flex justify-center items-center text-[#2e4053]'>
+        <div className='py-20 px-5 flex justify-center items-center text-[#2e4053]'>
         <div className='text-2xl sm:text-4xl font-bold divide-y-2 border-y-2 sm:w-[60%]'>
             <div className='hover:pl-1 duration-300'>
               <div className='py-10 px-2 flex justify-between items-center cursor-pointer' onClick={showFaq}>
