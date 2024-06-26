@@ -64,7 +64,7 @@ export default function Bags() {
 
     return (
         <div>
-            <div className='grid sm:grid-cols-3 grid-cols-1 gap-2 sm:gap-4 mx-4 md:mx-8 my-5'>
+            <div className='grid sm:grid-cols-3 grid-cols-1 gap-2 sm:gap-4 mx-4 md:mx-8 pb-10'>
                 {bagLog}
             </div>
         </div>

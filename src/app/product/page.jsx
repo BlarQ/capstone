@@ -108,17 +108,10 @@ export default function Page() {
                 </div>
                 <hr className='' />
 
-                <motion.div
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.5 }}
-                    variants={flowInVariants}
-                >
-
                     <div className='grid sm:grid-cols-3 grid-cols-1 gap-4 mt-10'>
+                        
                         {categoryLog}
                     </div>
-                </motion.div>
             </div>
 
             <div className='py-4'>
@@ -155,18 +148,12 @@ export default function Page() {
                     </div>
                 </div>
                 <hr className='mx-4 md:mx-8' />
-                <motion.div
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.5 }}
-                    variants={flowInVariants}
-                >
 
                     <div className='grid sm:grid-cols-3 grid-cols-1 gap-4 mt-10'>
                         
                         <Bags />
                     </div>
-                </motion.div>
+
             </div>
         </div>
     );
