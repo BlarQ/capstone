@@ -10,8 +10,8 @@ export default function page() {
 
 
             <div className='px-5 sm:px-10 flex justify-center items-center py-10'>
-                <div className='grid grid-cols-4 gap-20'>
-                    <div className='bg-[whitesmoke] divide-y-2 rounded-lg shadow-md hover:-translate-y-1 duration-200 max-h-72'>
+                <div className='grid sm:grid-cols-3 md:grid-cols-4 sm:gap-x-10 md:gap-x-20 gap-y-10'>
+                    <div className='bg-[whitesmoke] divide-y-2 rounded-lg shadow-md hover:-translate-y-1 duration-200 min-h-72'>
                         <div className='p-8 h-4/5'>
 
                         <Image src='/react.svg' width={150} height={150} alt='React Icon' title='React Icon' />
@@ -20,7 +20,7 @@ export default function page() {
                             <p>ReactJs</p>
                         </div>
                     </div>
-                    <div className='bg-[whitesmoke] divide-y-2 rounded-lg shadow-md hover:-translate-y-1 duration-200 max-h-72'>
+                    <div className='bg-[whitesmoke] divide-y-2 rounded-lg shadow-md hover:-translate-y-1 duration-200 min-h-72'>
                         <div className='p-8 h-4/5'>
 
                         <Image src='/nodejs.svg' width={150} height={150} alt='NodeJs Icon' title='NodeJs Icon' />
@@ -29,7 +29,7 @@ export default function page() {
                             <p>NodeJs</p>
                         </div>
                     </div>
-                    <div className='bg-[whitesmoke] divide-y-2 rounded-lg shadow-md hover:-translate-y-1 duration-200 max-h-72'>
+                    <div className='bg-[whitesmoke] divide-y-2 rounded-lg shadow-md hover:-translate-y-1 duration-200 min-h-72'>
                         <div className='p-8 h-4/5'>
 
                         <Image src='/nextjs.svg' width={150} height={150} alt='NextJs Icon' title='NextJs Icon' />
@@ -38,7 +38,7 @@ export default function page() {
                             <p>NextJs</p>
                         </div>
                     </div>
-                    <div className='bg-[whitesmoke] divide-y-2 rounded-lg shadow-md hover:-translate-y-1 duration-200 max-h-72'>
+                    <div className='bg-[whitesmoke] divide-y-2 rounded-lg shadow-md hover:-translate-y-1 duration-200 min-h-72'>
                         <div className='p-8 h-4/5 flex justify-center items-center'>
 
                         <Image src='/tailwindcss.svg' width={150} height={150} alt='TailwindCSS Icon' title='TailwindCSS Icon' />
@@ -74,7 +74,16 @@ export default function page() {
                             <p>Github</p>
                         </div>
                     </div>
-                    <div className='bg-[whitesmoke] divide-y-2 rounded-lg shadow-md hover:-translate-y-1 duration-200 max-h-72'>
+                    <div className='bg-[whitesmoke] divide-y-2 rounded-lg shadow-md hover:-translate-y-1 duration-200 min-h-72'>
+                        <div className='p-8 h-4/5 flex justify-center items-center'>
+
+                        <Image src='/vercel.svg' width={150} height={150} alt='Vercel Icon' title='Vercel Icon' />
+                        </div>
+                        <div className='p-2 flex justify-center items-center text-xl text-[#2e4053]'>
+                            <p>Vercel</p>
+                        </div>
+                    </div>
+                    <div className='bg-[whitesmoke] divide-y-2 rounded-lg shadow-md hover:-translate-y-1 duration-200 min-h-72'>
                         <div className='p-8 h-4/5 flex justify-center items-center'>
 
                         <Image src='/swiper.svg' width={150} height={150} alt='SwiperJs Icon' title='SwiperJs Icon' />
@@ -107,7 +116,25 @@ export default function page() {
                         <Image src='/react.svg' width={150} height={150} alt='React Fast Marquee Icon' title='React Fast Marquee Icon' />
                         </div>
                         <div className='p-2 flex justify-center items-center text-xl text-[#2e4053]'>
-                            <p>React Fast Marquee</p>
+                            <p>React Marquee</p>
+                        </div>
+                    </div>
+                    <div className='bg-[whitesmoke] divide-y-2 rounded-lg shadow-md hover:-translate-y-1 duration-200 min-h-72'>
+                        <div className='p-8 h-4/5 flex justify-center items-center'>
+
+                        <Image src='/unsplash.svg' width={150} height={150} alt='Unsplash Icon' title='Unsplash Icon' />
+                        </div>
+                        <div className='p-2 flex justify-center items-center text-xl text-[#2e4053]'>
+                            <p>Unsplash</p>
+                        </div>
+                    </div>
+                    <div className='bg-[whitesmoke] divide-y-2 rounded-lg shadow-md hover:-translate-y-1 duration-200 min-h-72'>
+                        <div className='p-8 h-4/5 flex justify-center items-center'>
+
+                        <Image src='/pixabay.svg' width={150} height={150} alt='Pixabay Icon' title='Pixabay Icon' />
+                        </div>
+                        <div className='p-2 flex justify-center items-center text-xl text-[#2e4053]'>
+                            <p>Pixabay</p>
                         </div>
                     </div>
                     
