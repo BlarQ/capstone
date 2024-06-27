@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${urbanist.className} max-w-[1440px]`}>
+      <body className={`${urbanist.className}`}>
         <SidebarProvider>
 
         <div>
