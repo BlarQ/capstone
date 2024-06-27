@@ -13,6 +13,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 
+
 export default function ProductPage({ params }) {
     const { cartItem, setCartItem, val, setVal, inputVal, setInputVal } = useContext(SideBarContext);
     const product = data.find(p => p.name.split(' ').join('-') === params.slug);

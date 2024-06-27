@@ -6,10 +6,21 @@ import { data } from "./data";
 import { FaPlus } from 'react-icons/fa6';
 import { SideBarContext } from '../providers';
 import { motion } from 'framer-motion'
+import Swal from 'sweetalert2'
 
 const productData = data.filter(datum => datum.type == 'Shoe').slice(0, 3);
 
 export default function HomeProduct() {
+    const abb = () => {
+        Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: 'Added',
+            showConfirmButton: false,
+            timer: 1500,
+            width: '10rem',
+        });
+    }
     const { cartItem, setCartItem, val, setVal, inputVal, setInputVal } = useContext(SideBarContext);
 
     function handleButtonIncrease(product) {
@@ -44,12 +55,6 @@ export default function HomeProduct() {
         visible: { opacity: 1, y: 0, transition: { duration: 1 } },
     };
 
-    // if (handleButtonIncrease === 'true'){
-    //     <Alert icon={<MdCheckCircleOutline fontSize="inherit" />} severity="success">
-    //         Here is a gentle confirmation that your action was successful.
-    //     </Alert>
-    // }
-
     const productLog = productData.map(product => (
         <section key={product.id}>
             <div className='flex justify-center items-center border-2 text-[#2e4053] group border-[#f7f7f7] hover:bg-[#2e4053] duration-300 hover:text-white hover:shadow-sm flex-col'>
@@ -63,7 +68,10 @@ export default function HomeProduct() {
                     </section>
                 </Link>
 
-                <button className='relative shadow-md -mt-16 py-4 flex items-center justify-center space-x-1 px-6 rounded-full bg-[#f7f7f7] font-bold text-[#2e4053] hover:text-white hover:bg-[#34c759] hover:scale-95 duration-300' onClick={() => handleButtonIncrease(product)}>
+                <button className='relative shadow-md -mt-16 py-4 flex items-center justify-center space-x-1 px-6 rounded-full bg-[#f7f7f7] font-bold text-[#2e4053] hover:text-white hover:bg-[#34c759] hover:scale-95 duration-300' onClick={() => {
+                    handleButtonIncrease(product);
+                    abb();
+                }}>
                     <p>Add to cart</p><FaPlus />
                 </button>
 
