@@ -19,6 +19,10 @@ export const BottomNav = () => {
     const suggestionBoxRef = useRef(null);
     const [isHovered, setIsHovered] = useState(false);
 
+    function dropdown(){
+        setIsHovered(!isHovered)
+    }
+
     function showPage() {
         setPage(!page)
     }
@@ -57,8 +61,8 @@ export const BottomNav = () => {
                             <Link href='/about'>About</Link>
                         </li>
                         <li>
-                            <Link className='group flex justify-start items-center' onMouseOverCapture={showPage} href='/' onMouseOver={() => setIsHovered(true)}
-                                onClick={() => setIsHovered(false)}>Pages
+                            <Link className='group flex justify-start items-center' onMouseOverCapture={showPage} href='' onClick={dropdown}
+                                >Pages
                                 <MdKeyboardArrowUp className='group-hover:rotate-180 text-xl duration-300' />
                             </Link>
 

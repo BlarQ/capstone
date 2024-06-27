@@ -11,9 +11,8 @@ export default function PageHover() {
                     <p className='text-lg font-bold'>Pages</p>
                     <Link className='hover:text-[#34c759] duration-300 w-fit' href='/'>Home</Link>
                     <Link className='hover:text-[#34c759] duration-300 w-fit' href='/about'>About</Link>
-                    <Link className='hover:text-[#34c759] duration-300 w-fit' href='/'>Pages</Link>
                     <Link className='hover:text-[#34c759] duration-300 w-fit' href='/product'>Products</Link>
-                    <Link className='hover:text-[#34c759] duration-300 w-fit' href='/'>Contact</Link>
+                    <Link className='hover:text-[#34c759] duration-300 w-fit' href='/contact'>Contact</Link>
                   </div>
                 </section>
               </section>
@@ -25,7 +24,7 @@ export default function PageHover() {
                     <Link className='hover:text-[#34c759] duration-300 w-fit' href='/shoecategory'>Shoes</Link>
                     <Link className='hover:text-[#34c759] duration-300 w-fit' href='/shirtcategory'>Shirts</Link>
                     <Link className='hover:text-[#34c759] duration-300 w-fit' href='/watchcategory'>WristWatch</Link>
-                    <Link className='hover:text-[#34c759] duration-300 w-fit' href='/'>Bags</Link>
+                    <Link className='hover:text-[#34c759] duration-300 w-fit' href='/bagscategory'>Bags</Link>
                     <Link className='hover:text-[#34c759] duration-300 w-fit' href='/'>Breifcase</Link>
                     <Link className='hover:text-[#34c759] duration-300 w-fit' href='/'>Wallets</Link>
                   </div>
@@ -36,9 +35,9 @@ export default function PageHover() {
                 <section>
                   <div className='flex flex-col gap-4 w-full'>
                     <p className='mb-6'></p>
-                    <Link className='hover:text-[#34c759] duration-300 w-fit' href='/'>FAQs</Link>
-                    <Link className='hover:text-[#34c759] duration-300 w-fit' href='/'>Terms</Link>
-                    <Link className='hover:text-[#34c759] duration-300 w-fit' href='/'>Shipping Information</Link>
+                    <Link className='hover:text-[#34c759] duration-300 w-fit' href='/faqs'>FAQs</Link>
+                    <Link className='hover:text-[#34c759] duration-300 w-fit' href='/terms'>Terms</Link>
+                    <Link className='hover:text-[#34c759] duration-300 w-fit' href='/resources'>Dev Toolkit</Link>
                     <Link className='hover:text-[#34c759] duration-300 w-fit' href='/'>Reviews</Link>
                   </div>
                 </section>

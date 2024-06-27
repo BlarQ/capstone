@@ -47,7 +47,7 @@ export default function Page() {
                     </section>
                 </Link>
 
-                <Link className='relative shadow-md -mt-16 py-4 flex items-center justify-center space-x-1 px-6 rounded-full bg-[#f7f7f7] font-bold text-[#2e4053] hover:text-white hover:bg-[#34c759] hover:scale-95 duration-300' href='/' onClick={() => handleButtonIncrease(shoe)}>
+                <Link className='relative shadow-md -mt-16 py-4 flex items-center justify-center space-x-1 px-6 rounded-full bg-[#f7f7f7] font-bold text-[#2e4053] hover:text-white hover:bg-[#34c759] hover:scale-95 duration-300' href='' onClick={() => handleButtonIncrease(shoe)}>
                     <p>Add to cart</p>
                 </Link>
 
