@@ -64,7 +64,7 @@ export default function CartPage({params}) {
                                     <div key={item.id} className='flex items-start justify-between px-2 text-base'>
                                         <div className='flex flex-col justify-start items-start'>
                                             <p>{item.title}</p>
-                                            <p>{item.amount.toLocaleString()}</p>
+                                            <p>&#8358; {item.amount.toLocaleString()}</p>
                                             <p className='text-base cursor-pointer py-5 flex justify-center items-center' onClick={() => handleDelete(item.id)}><AiTwotoneDelete /> Remove</p>
                                         </div>
                                         <div>
@@ -88,7 +88,7 @@ export default function CartPage({params}) {
                     <div className='w-full text-base font-bold rounded-md mt-5'>
                         <div className='flex justify-between px-2 sm:px-6'>
                             <span>Subtotal</span>
-                            <span>{calculateSubtotal().toLocaleString()}</span>
+                            <span>&#8358; {calculateSubtotal().toLocaleString()}</span>
                         </div>
                         <div className='py-4'>
                             <button className='py-2 w-full bg-[#34c759] rounded-full text-white font-semibold hover:scale-95 duration-300'>Continue to Checkout</button>
