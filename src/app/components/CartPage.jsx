@@ -4,10 +4,12 @@ import { SideBarContext } from '../providers';
 import Link from 'next/link';
 import { AiTwotoneDelete } from "react-icons/ai";
 
-export default function CartPage() {
+export default function CartPage({params}) {
     const { cartItem, setCartItem, setVal } = useContext(SideBarContext);
     const { isOpen, setIsOpen } = useContext(SideBarContext);
     const [quantities, setQuantities] = useState({});
+
+
 
     useEffect(() => {
         const initialQuantities = {};
@@ -67,7 +69,7 @@ export default function CartPage() {
                                         </div>
                                         <div>
                                             <input 
-                                                className='w-14 rounded-lg pl-3 outline-none' 
+                                                className='w-14 h-8 rounded-lg pl-3 outline-none text-lg' 
                                                 type="number" 
                                                 value={quantities[item.id] || item.value}
                                                 min={1} 
