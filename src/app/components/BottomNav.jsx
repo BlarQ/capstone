@@ -10,7 +10,6 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { SideBarContext } from '../providers';
 import CartPage from './CartPage';
 
-
 export const BottomNav = () => {
     const { isOpen, setIsOpen } = useContext(SideBarContext)
 
@@ -19,7 +18,7 @@ export const BottomNav = () => {
     const suggestionBoxRef = useRef(null);
     const [isHovered, setIsHovered] = useState(false);
 
-    function dropdown(){
+    function dropdown() {
         setIsHovered(!isHovered)
     }
 
@@ -29,6 +28,11 @@ export const BottomNav = () => {
 
     function showNav() {
         setHide(!hide)
+    }
+
+    function hideDropdown() {
+        setIsHovered(false);
+        setHide(false);
     }
 
     // Click outside handler
@@ -54,15 +58,15 @@ export const BottomNav = () => {
                     </Link>
 
                     <ul className={hide ? 'fixed font-semibold flex sm:flex-row text-[#2e4053] left-0 w-full sm:text-black flex-col h-fit mt-[22rem] sm:flex px-5 pt-5 gap-y-5 bg-white shadow-md sm:bg-transparent sm:mt-0 sm:h-0 sm:left-48 sm:font-semibold sm:gap-x-5 items-start pb-10 transition-all duration-300' : 'sm:relative hidden sm:flex items-center justify-start gap-5 font-semibold'}>
-                        <li >
-                            <Link href='/'>Home</Link>
+                        <li>
+                            <Link href='/' onClick={hideDropdown}>Home</Link>
                         </li>
                         <li>
-                            <Link href='/about'>About</Link>
+                            <Link href='/about' onClick={hideDropdown}>About</Link>
                         </li>
                         <li>
-                            <Link className='group flex justify-start items-center' onMouseOverCapture={showPage} href='' onClick={dropdown}
-                                >Pages
+                            <Link className='group flex justify-start items-center' onMouseOverCapture={showPage} href='' onClick={dropdown}>
+                                Pages
                                 <MdKeyboardArrowUp className='group-hover:rotate-180 text-xl duration-300' />
                             </Link>
 
@@ -70,58 +74,55 @@ export const BottomNav = () => {
                                 <div className='grid grid-cols-3 gap-10'>
                                     <ul className='space-y-4'>
                                         <li>
-                                            <Link href="/">Home</Link>
+                                            <Link href="/" onClick={hideDropdown}>Home</Link>
                                         </li>
                                         <li>
-                                            <Link href="/about">About</Link>
+                                            <Link href="/about" onClick={hideDropdown}>About</Link>
                                         </li>
                                         <li>
-                                            <Link href="/product">Products</Link>
+                                            <Link href="/product" onClick={hideDropdown}>Products</Link>
                                         </li>
                                         <li>
-                                            <Link href="/contact">Contact</Link>
+                                            <Link href="/contact" onClick={hideDropdown}>Contact</Link>
                                         </li>
                                     </ul>
                                     <ul className='space-y-4'>
                                         <li>
-                                            <Link href="/shoecategory">Shoe</Link>
+                                            <Link href="/shoecategory" onClick={hideDropdown}>Shoe</Link>
                                         </li>
                                         <li>
-                                            <Link href="/shirtcategory">Shirt</Link>
+                                            <Link href="/shirtcategory" onClick={hideDropdown}>Shirt</Link>
                                         </li>
                                         <li>
-                                            <Link href="/watchcategory">Watch</Link>
+                                            <Link href="/watchcategory" onClick={hideDropdown}>Watch</Link>
                                         </li>
                                         <li>
-                                            <Link href="/bagscategory">Bag</Link>
+                                            <Link href="/bagscategory" onClick={hideDropdown}>Bag</Link>
                                         </li>
                                     </ul>
                                     <ul className='space-y-4'>
                                         <li>
-                                            <Link href="/faqs">FAQs</Link>
+                                            <Link href="/faqs" onClick={hideDropdown}>FAQs</Link>
                                         </li>
                                         <li>
-                                            <Link href="/resources">Dev Toolkit</Link>
+                                            <Link href="/resources" onClick={hideDropdown}>Dev Toolkit</Link>
                                         </li>
                                         <li>
-                                            <Link href="/terms">Terms</Link>
+                                            <Link href="/terms" onClick={hideDropdown}>Terms</Link>
                                         </li>
                                         <li>
-                                            <Link href="/">Reviews</Link>
+                                            <Link href="/" onClick={hideDropdown}>Reviews</Link>
                                         </li>
                                     </ul>
-
                                 </div>
                             </div>
                         </li>
                         <li>
-                            <Link href='/product'>Product</Link>
+                            <Link href='/product' onClick={hideDropdown}>Product</Link>
                         </li>
 
                         <div className='flex sm:hidden w-full'>
-
-                            {/* <Cart className='cursor-pointer' /> */}
-                            <Link className='bg-[#34c759] text-center text-white py-3 min-w-[100%] rounded-full font-semibold hover:scale-95 hover:transition duration-500' href='/contact'>Buzz!</Link>
+                            <Link className='bg-[#34c759] text-center text-white py-3 min-w-[100%] rounded-full font-semibold hover:scale-95 hover:transition duration-500' href='/contact' onClick={hideDropdown}>Buzz!</Link>
                         </div>
                     </ul>
                 </div>
@@ -130,19 +131,16 @@ export const BottomNav = () => {
                     <SearchBar />
                 </div>
 
-
                 <div className='justify-center items-center space-x-7 hidden sm:flex'>
                     <Cart className='cursor-pointer' />
-                    <Link className='bg-[#34c759] text-white py-3 px-6 rounded-full font-semibold hover:scale-95 hover:transition duration-500 capitalize' href='/contact'>Buzz!</Link>
+                    <Link className='bg-[#34c759] text-white py-3 px-6 rounded-full font-semibold hover:scale-95 hover:transition duration-500 capitalize' href='/contact' onClick={hideDropdown}>Buzz!</Link>
                 </div>
-
 
                 <div className='sm:hidden cursor-pointer flex justify-center items-center space-x-8'>
                     <Cart className='cursor-pointer' />
                     <ul onClick={showNav} className='p-2 bg-[#34c759] rounded-md shadow-md text-white'>
                         <GiHamburgerMenu className={hide ? "hidden" : "block text-2xl"} />
                         <RiCloseFill className={`${!hide ? "hidden" : "block text-2xl font-bold"}`} />
-                        {/* <MdClose className={`${!hide ? "hidden" : "block text-2xl"}`}/> */}
                     </ul>
                 </div>
             </nav>
@@ -152,9 +150,7 @@ export const BottomNav = () => {
 
             {isOpen &&
                 <CartPage />
-
             }
-
         </div>
     )
 }
