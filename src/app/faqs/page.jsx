@@ -33,7 +33,7 @@ export default function Page() {
     <div>
         <div className='w-full h-[60vh] bg-[#ecfcec] flex flex-col justify-center items-center'>
             <h1 className='sm:text-7xl text-4xl text-center font-bold text-[#2e4053] py-4'>Frequently Asked Questions</h1>
-            <p className='text-xl sm:w-[60%] text-center font-semibold text-[gray]'>Welcome to TrendLuxe&#39;s FAQ section! Here, you&#39;ll find answers to the most common questions about our products, services, and policies.</p>
+            <p className='text-xl sm:w-[60%] text-center font-semibold text-[gray] px-4 sm:px-10'>Welcome to TrendLuxe&#39;s FAQ section! Here, you&#39;ll find answers to the most common questions about our products, services, and policies.</p>
         </div>
 
         <div className='py-20 px-5 flex justify-center items-center text-[#2e4053]'>
