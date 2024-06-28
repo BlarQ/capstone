@@ -71,7 +71,8 @@ export default function CartPage({params}) {
                                             <input 
                                                 className='w-14 h-8 rounded-lg pl-3 outline-none text-lg' 
                                                 type="number" 
-                                                value={quantities[item.id] || item.value}
+                                                defaultValue={quantities[item.id] || item.value}
+                                                step={1}
                                                 min={1} 
                                                 max={10} 
                                                 onChange={(e) => handleQuantityChange(item.id, parseInt(e.target.value))} 
