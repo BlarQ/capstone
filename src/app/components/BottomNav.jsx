@@ -53,7 +53,7 @@ export const BottomNav = () => {
                         TrendLuxe
                     </Link>
 
-                    <ul className={hide ? 'fixed font-semibold flex sm:flex-row text-[#2e4053] left-0 w-full sm:text-black flex-col h-fit mt-[22rem] sm:flex px-5 pt-5 gap-y-5 bg-white shadow-md sm:bg-transparent sm:mt-0 sm:h-0 sm:left-48 sm:font-semibold sm:gap-x-5 items-start -top-[34%] pb-10 transition-all duration-300' : 'sm:relative hidden sm:flex items-center justify-start gap-5 font-semibold'}>
+                    <ul className={hide ? 'fixed font-semibold flex sm:flex-row text-[#2e4053] left-0 w-full sm:text-black flex-col h-fit mt-[22rem] sm:flex px-5 pt-5 gap-y-5 bg-white shadow-md sm:bg-transparent sm:mt-0 sm:h-0 sm:left-48 sm:font-semibold sm:gap-x-5 items-start pb-10 transition-all duration-300' : 'sm:relative hidden sm:flex items-center justify-start gap-5 font-semibold'}>
                         <li >
                             <Link href='/'>Home</Link>
                         </li>
