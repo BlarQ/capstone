@@ -10,9 +10,9 @@ Check out the live demo of the application: Live [Demo](https://thetrendluxe.ver
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Navy Blue | ![#2e4053](https://via.placeholder.com/10/0a192f?text=+) #2e4053 |
-| Light Grey | ![#f7f7f7](https://via.placeholder.com/10/f8f8f8?text=+) #f7f7f7 |
-| Bright Green | ![#34c759](https://via.placeholder.com/10/00b48a?text=+) #34c759 |
+| Navy Blue | ![#2e4053](https://via.placeholder.com/10/2e4053?text=+) #2e4053 |
+| Light Grey | ![#f7f7f7](https://via.placeholder.com/10/f7f7f7?text=+) #f7f7f7 |
+| Bright Green | ![#34c759](https://via.placeholder.com/10/34c759?text=+) #34c759 |
 
 
 
